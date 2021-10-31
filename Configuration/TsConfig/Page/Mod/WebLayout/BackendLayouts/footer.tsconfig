@@ -1,0 +1,51 @@
+mod.web_layout.BackendLayouts {
+  footerLayout {
+    title = Footer Layout
+    config {
+      backend_layout {
+        colCount = 4
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Logo
+                colspan = 4
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Footer Spalte 1
+                colPos = 1
+              }
+              2 {
+                name = Footer Spalte 2
+                colPos = 2
+              }
+              3 {
+                name = Footer Spalte 3
+                colPos = 3
+              }
+              4 {
+                name = Footer Spalte 4
+                colPos = 4
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Footer ende
+                colspan = 4
+                colPos = 5
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

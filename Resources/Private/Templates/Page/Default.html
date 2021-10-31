@@ -1,0 +1,45 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:debug>{_all}</f:debug>
+
+
+
+    <f:render partial="Navbar" arguments="{_all}"></f:render>
+    <f:if condition="{data.slug}=='/'">
+    <f:then>
+    <div class="content">
+      
+        <f:render partial="Beginn" arguments="{_all}"></f:render>
+        <f:render partial="Quote" arguments="{_all}"></f:render>
+        <f:render partial="Artist" arguments="{_all}"></f:render>
+        <f:render partial="Webentwickler" arguments="{_all}"></f:render>
+        <f:render partial="Contact" arguments="{_all}"></f:render>
+      
+    </div>
+    </f:then>
+
+    <f:else>
+
+            <f:if condition="{data.slug}=='/datenschutz'">
+                <f:then>
+                <f:render partial="Datenschutz" arguments="{_all}"></f:render>
+                </f:then>
+
+                <f:else>
+                            <f:if condition="{data.slug}=='/impressum'">
+                            <f:render partial="Impressum" arguments="{_all}"></f:render>
+                            </f:if>
+                </f:else>
+            </f:if>
+
+</f:else>
+</f:if>
+
+
+    <f:render partial="Footer" arguments="{_all}"></f:render>
+   
+</f:section>
+
+<p><f:cObject typoscriptObjectPath="lib.error"/></p>  

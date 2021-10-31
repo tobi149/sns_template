@@ -1,0 +1,78 @@
+#body{
+    // Farben ############################################
+    $primary-color: #6FB3DE;
+    $second-color: #F4A24C;
+    $light-color: #DFE0DF;
+    $dark-color: #2F4858;
+    $white-color: #ffffff;
+    $black-color: black;
+    
+
+    
+        .bg-dark{
+            background-color: $dark-color!important;
+    
+        }
+        .bg-light{
+            background-color: $light-color!important;
+        }
+        .bg-primary, .btn-primary{
+            background-color: $primary-color!important;
+        }
+        .btn-dark {
+            color: $white-color !important;
+        }
+    
+    
+    // Schrift ##################################
+        h1, .display-1{
+            font-family: 'Yeseva One', cursive!important;
+                color: $black-color;
+            }
+        
+    .h2-big{
+    
+        font-size: 64px;
+        color: $second-color;
+        padding-bottom: 2rem;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 32px!important;
+        }
+    }
+    
+        p,
+        a,button, input, optgroup, select, textarea, h3, h4, label{
+            
+            font-family: 'Josefin Sans', sans-serif!important;
+            color: $dark-color;
+        }
+    
+    h2{
+        font-size: 48px;
+        color: $primary-color;
+        font-family: 'Yeseva One', cursive!important;
+    }
+    
+    h3{
+        font-size: 18px;
+        color: $second-color;
+    }
+    
+        p{
+            font-size: 16px;
+            color: var(--font);
+        }
+       
+        .nav-link{
+            span{
+                letter-spacing: 2px;
+            }
+        }
+        
+
+    
+    }
+    
+    
+    

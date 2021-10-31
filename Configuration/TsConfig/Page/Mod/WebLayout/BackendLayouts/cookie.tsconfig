@@ -1,0 +1,34 @@
+mod.web_layout.BackendLayouts {
+  cookieText {
+    title = Cookie Text
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Cookie Text
+                rowspan = 2
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Cookie btn
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

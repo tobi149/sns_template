@@ -1,0 +1,67 @@
+.sns-tup{
+    .text-top{
+      height: 20%;
+      @media only screen and (max-width: 1200px) {
+        height: 15%;
+      }
+      @media only screen and (max-width: 990px) {
+        height: 13%;
+      }
+      @media only screen and (max-width: 770px) {
+        height: 16%;
+      }
+    }
+  }
+  
+  
+    .sns-flipcard {
+      @media only screen and (max-width: 990px) {
+        height: 180px!important;
+        width: 180px!important;
+  }
+  
+    }
+    
+    .sns-flipcard-back{
+      position: relative;
+      .btn{
+          position: absolute;
+          bottom: 6%;
+          left: 27%;
+      }
+      .card-title {
+          margin-bottom: .2rem;
+      }
+  }
+    
+  
+  
+  
+  
+    // Preload
+  
+    .preload{ 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100vh; 
+      background: #fafbfe; 
+      transition: opacity 0.5s ease; 
+      z-index: 999999999999999999999;
+  
+  
+  } 
+  .preload-finish{ 
+      opacity: 0; 
+      pointer-events: none; 
+      
+  }
+  
+  
+  .sns-flipcard {
+    background-color: #fff!important;
+  }

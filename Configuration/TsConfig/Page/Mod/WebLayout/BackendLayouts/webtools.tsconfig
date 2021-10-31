@@ -1,0 +1,29 @@
+mod.web_layout.BackendLayouts {
+  webtoolsLayout {
+    title = Webtools Layout
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Web Tools - Text
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Web Tools - icons
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,399 @@
+######################
+#### DEPENDENCIES ####
+######################
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+
+
+################
+#### HELPER ####
+################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sns_template/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+    shortcutIcon = EXT:sns_template/Resources/Public/Icons/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+        # Template names will be generated automatically by converting the applied
+        # backend_layout, there is no explicit mapping necessary anymore.
+        #
+        # BackendLayout Key
+        # subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        #
+        # Backend Record
+        # uid: 1 -> 1.html
+        #
+        # Database Entry
+        # value: -1 -> None.html
+        # value: pagets__subnavigation_right_2_columns -> SubnavigationRight2Columns.html
+        templateName = TEXT
+        templateName {
+            cObject = TEXT
+            cObject {
+                data = pagelayout
+                required = 1
+                case = uppercamelcase
+                split {
+                    token = pagets__
+                    cObjNum = 1
+                    1.current = 1
+                }
+            }
+            ifEmpty = Default
+        }
+        templateRootPaths {
+            0 = EXT:sns_template/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:sns_template/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:sns_template/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                levels = 2
+               # expandAll = 0
+                includeSpacer = 1
+                as = mainnavigation
+                titleField = nav_title // title
+            }
+
+            30 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+            30 {
+                	as = langMenu
+                    languages = auto
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 {
+                as = footerMenu
+                special = directory
+                special.value = 7
+                titleField = nav_title // title
+                levels = 1
+            }
+        }
+    }
+
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+        description = {$page.meta.description}
+        description {
+            override.field = description
+        }
+        author = {$page.meta.author}
+        author {
+            override.field = author
+        }
+        keywords = {$page.meta.keywords}
+        keywords {
+            override.field = keywords
+        }
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        # OpenGraph Tags
+        og:title {
+            attribute = property
+            field = title
+        }
+        og:site_name {
+            attribute = property
+            data = TSFE:tmpl|setup|sitetitle
+        }
+        og:description = {$page.meta.description}
+        og:description {
+            attribute = property
+            field = description
+        }
+        og:image {
+            attribute = property
+            stdWrap.cObject = FILES
+            stdWrap.cObject {
+                references {
+                    data = levelfield:-1, media, slide
+                }
+                maxItems = 1
+                renderObj = COA
+                renderObj {
+                    10 = IMG_RESOURCE
+                    10 {
+                        file {
+                            import.data = file:current:uid
+                            treatIdAsReference = 1
+                            width = 1280c
+                            height = 720c
+                        }
+                        stdWrap {
+                            typolink {
+                                parameter.data = TSFE:lastImgResourceInfo|3
+                                returnLast = url
+                                forceAbsoluteUrl = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    includeCSSLibs {
+
+    }
+
+    includeCSS {
+      #  sns_template_layout = EXT:sns_template/Resources/Public/Css/layout.min.css
+	10 = EXT:sns_template/Resources/Public/Css/bootstrap.min.css
+	20 = EXT:sns_template/Resources/Public/Css/bootstrap.min.css.map
+	30 = EXT:sns_template/Resources/Public/Css/aos.css
+
+    90 = EXT:sns_template/Resources/Public/Css/scss/main.css
+	100 = EXT:sns_template/Resources/Public/Css/styles.min.css
+
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+	
+
+    }
+
+    includeJSFooterlibs {
+	
+    }
+
+    includeJSFooter {
+	10 = EXT:sns_template/Resources/Public/JavaScript/Dist/script.min.js
+	20 = EXT:sns_template/Resources/Public/JavaScript/Src/aos.js
+	30 = EXT:sns_template/Resources/Public/JavaScript/Src/cookie.js
+	40 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js
+	50 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js.map
+	
+	smpt = https://www.smtpjs.com/v3/smtp.js
+	smpt.external = 1
+	alert = https://unpkg.com/sweetalert/dist/sweetalert.min.js
+	alert.external = 1
+
+    }
+}
+
+
+################
+#### CONFIG ####
+################
+config {
+    absRefPrefix = auto
+    no_cache = {$config.no_cache}
+    uniqueLinkVars = 1
+    pageTitleFirst = 1
+    linkVars = L
+    prefixLocalAnchors = {$config.prefixLocalAnchors}
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = {$config.removeDefaultJS}
+    inlineStyle2TempFile = 1
+    admPanel = {$config.admPanel}
+    debug = 0
+    cache_period = 86400
+    sendCacheHeaders = {$config.sendCacheHeaders}
+    intTarget =
+    extTarget =
+    disablePrefixComment = 1
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    headerComment = {$config.headerComment}
+
+    // Disable Image Upscaling
+    noScaleUp = 1
+
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}
+
+//############################# LIBS #########################
+
+// Beginn
+lib.beginnText < styles.content.get
+lib.beginnText.select.pidInList = 13
+
+lib.beginnImg < styles.content.get
+lib.beginnImg.select.pidInList = 13
+lib.beginnImg.select.where = colPos = 1
+
+lib.beginnLink1 < styles.content.get
+lib.beginnLink1.select.pidInList = 13
+lib.beginnLink1.select.where = colPos = 2
+
+lib.beginnLink2 < styles.content.get
+lib.beginnLink2.select.pidInList = 13
+lib.beginnLink2.select.where = colPos = 3
+
+// Zitat
+lib.quoteImgLeft < styles.content.get
+lib.quoteImgLeft.select.pidInList = 13
+lib.quoteImgLeft.select.where = colPos = 4
+
+lib.quote < styles.content.get
+lib.quote.select.pidInList = 13
+lib.quote.select.where = colPos = 5
+
+lib.quoteImgRight < styles.content.get
+lib.quoteImgRight.select.pidInList = 13
+lib.quoteImgRight.select.where = colPos = 6
+
+// Zeichnungen
+
+    // 1
+lib.zeiImg1 < styles.content.get
+lib.zeiImg1.select.pidInList = 23
+lib.zeiDes1 < styles.content.get
+lib.zeiDes1.select.pidInList = 23
+lib.zeiDes1.select.where = colPos = 2
+    // 2
+lib.zeiImg2 < styles.content.get
+lib.zeiImg2.select.pidInList = 23
+lib.zeiImg2.select.where = colPos = 1
+lib.zeiDes2 < styles.content.get
+lib.zeiDes2.select.pidInList = 23
+lib.zeiDes2.select.where = colPos = 3
+    // 3
+lib.zeiImg3 < styles.content.get
+lib.zeiImg3.select.pidInList = 23
+lib.zeiImg3.select.where = colPos = 4
+lib.zeiDes3 < styles.content.get
+lib.zeiDes3.select.pidInList = 23
+lib.zeiDes3.select.where = colPos = 6
+    // 4
+lib.zeiImg4 < styles.content.get
+lib.zeiImg4.select.pidInList = 23
+lib.zeiImg4.select.where = colPos = 5
+lib.zeiDes4 < styles.content.get
+lib.zeiDes4.select.pidInList = 23
+lib.zeiDes4.select.where = colPos = 7
+
+    // Projekt
+
+lib.projektTitel < styles.content.get
+lib.projektTitel.select.pidInList = 25
+
+lib.projektDes < styles.content.get
+lib.projektDes.select.pidInList = 25
+lib.projektDes.select.where = colPos = 1
+
+lib.pjIMG1 < styles.content.get
+lib.pjIMG1.select.pidInList = 25
+lib.pjIMG1.select.where = colPos = 2
+
+lib.pjIMG2 < styles.content.get
+lib.pjIMG2.select.pidInList = 25
+lib.pjIMG2.select.where = colPos = 3
+
+lib.pjIMG3 < styles.content.get
+lib.pjIMG3.select.pidInList = 25
+lib.pjIMG3.select.where = colPos = 4
+
+lib.pjIMG4 < styles.content.get
+lib.pjIMG4.select.pidInList = 25
+lib.pjIMG4.select.where = colPos = 5
+
+lib.projektVor < styles.content.get
+lib.projektVor.select.pidInList = 25
+lib.projektVor.select.where = colPos = 6
+
+lib.projektSk1 < styles.content.get
+lib.projektSk1.select.pidInList = 25
+lib.projektSk1.select.where = colPos = 7
+
+lib.projektSk2 < styles.content.get
+lib.projektSk2.select.pidInList = 25
+lib.projektSk2.select.where = colPos = 8
+
+lib.projektSk3 < styles.content.get
+lib.projektSk3.select.pidInList = 25
+lib.projektSk3.select.where = colPos = 9
+
+
+// Banner
+lib.bannerImg < styles.content.get
+lib.bannerImg.select.pidInList = 30
+lib.bannerImg.select.where = colPos = 1
+
+lib.bannerTex < styles.content.get
+lib.bannerTex.select.pidInList = 30
+lib.bannerTex.select.where = colPos = 2
+
+// Web Skill
+lib.webskillTex < styles.content.get
+lib.webskillTex.select.pidInList = 27
+
+lib.webskillC1 < styles.content.get
+lib.webskillC1.select.pidInList = 27
+lib.webskillC1.select.where = colPos = 1
+
+lib.webskillC2 < styles.content.get
+lib.webskillC2.select.pidInList = 27
+lib.webskillC2.select.where = colPos = 2
+
+lib.webskillC3 < styles.content.get
+lib.webskillC3.select.pidInList = 27
+lib.webskillC3.select.where = colPos = 3
+
+// Footer
+lib.footerTex < styles.content.get
+lib.footerTex.select.pidInList = 7
+
+// Stuf
+lib.totop < styles.content.get
+lib.totop.select.pidInList = 48
+
+//test01
+
+// Web Tools
+lib.webTools < styles.content.get
+lib.webTools.select.pidInList = 28
+
+lib.webToolsIco < styles.content.get
+lib.webToolsIco.select.pidInList = 28
+lib.webToolsIco.select.where = colPos = 1
+
+// Contact
+lib.contact < styles.content.get 
+lib.contact.select.pidInList = 32
+
+// Meta
+lib.error < styles.content.get
+lib.error.select.pidInList = 6
+
+lib.cookieText < styles.content.get
+lib.cookieText.select.pidInList = 19
+
+lib.cookieBtn < styles.content.get
+lib.cookieBtn.select.pidInList = 19
+lib.cookieBtn.select.where = colPos = 1

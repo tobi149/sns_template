@@ -1,0 +1,43 @@
+mod.web_layout.BackendLayouts {
+  bannerLayout {
+    title = Banner Layout
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = content before
+                colspan = 2
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = banner - img
+                colPos = 1
+              }
+              2 {
+                name = banner - text
+                colPos = 2
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = content - after
+                colspan = 2
+                colPos = 3
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

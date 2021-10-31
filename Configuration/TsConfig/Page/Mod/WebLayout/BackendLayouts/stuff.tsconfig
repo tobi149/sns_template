@@ -1,0 +1,61 @@
+mod.web_layout.BackendLayouts {
+  stuffLayout {
+    title = Stuff Layout
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 4
+        rows {
+          1 {
+            columns {
+              1 {
+                name = nach oben
+                colPos = 0
+              }
+              2 {
+                name = 1
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = 2
+                colPos = 2
+              }
+              2 {
+                name = 3
+                colPos = 3
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = 4
+                colPos = 4
+              }
+              2 {
+                name = 5
+                colPos = 5
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = 6
+                colPos = 6
+              }
+              2 {
+                name = 7
+                colPos = 7
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

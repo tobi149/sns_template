@@ -1,0 +1,143 @@
+// Farben ############################################
+$primary-color: #6FB3DE;
+$second-color: #F4A24C;
+$light-color: #DFE0DF;
+$dark-color: #2F4858;
+$white-color: #ffffff;
+$black-color: black;
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+
+    --bg: white;
+    --font: #262e3a;
+    --bg-light: #fafbfe;
+}
+
+html[data-theme="dark"] {
+    --bg: #161b22;
+    --font: white;
+    --bg-light: #0c1b2e;
+}
+
+body {
+    background-color: var(--bg) !important;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
+
+.light-dark-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1.5rem;
+}
+
+
+#coockiebox {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    opacity: 0.9;
+}
+
+.skip-to-content-link {
+    left: 5%;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(20%);
+}
+
+.container{
+   padding: 5rem 0;
+}
+
+.hr{
+    position: relative;
+   
+}
+
+hr{
+    width: 335px;
+  position: absolute;
+  right: 42.6%;
+  bottom: 0;
+  margin: 3rem 0!important;
+  color: $dark-color;
+}
+
+hr:not([size]) {
+    height: 2px!important;
+}
+
+.btn-secondary{
+    background-color: $second-color!important;
+    color: $white-color!important;
+    border-color: $second-color!important;
+
+}
+
+
+.s-beginn .c-beginn .col-beginn {
+    padding-left: 0px!important;
+}
+
+.frame p{
+    margin: 0 0 0 0;
+}
+
+.s-tools{
+  .col{
+      display: flex;
+  }
+        position: relative;
+        .image:before{
+            position: absolute;
+            content: ' ';
+            height: 100px;
+            width: 100px;
+            background-color: #0c1b2e;
+            z-index: -9;
+//left: -50%;
+//bottom: -10%;
+border-radius: 50%;
+
+    
+    }
+    .frame-default{
+        min-width: 200px;
+    }
+    .frame-default:first-child{
+      
+        .image:before{
+            left: -24px;
+            bottom: -10%;
+        }
+    }
+    .frame-default:nth-child(2){
+      
+        .image:before{
+            left: -11px;
+            bottom: -21px;
+        }
+    }
+
+    .image{
+      padding-top: 4rem;
+    }
+.ce-gallery{
+     height: 200px;
+}
+}

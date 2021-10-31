@@ -1,0 +1,61 @@
+mod.web_layout.BackendLayouts {
+  zeichnungenLayout {
+    title = Zeichnungen Layout
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 4
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Zeichnung 1 - Bild
+                colPos = 0
+              }
+              2 {
+                name = Zeichnung 2 - Bild
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Zeichnung 1 - Beschreibung
+                colPos = 2
+              }
+              2 {
+                name = Zeichnung 2 - Beschreibung
+                colPos = 3
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Zeichnung 3 - Bild
+                colPos = 4
+              }
+              2 {
+                name = Zeichnung 4 - Bild
+                colPos = 5
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = Zeichnung 3 - Beschreibung
+                colPos = 6
+              }
+              2 {
+                name = Zeichnung 4 - Beschreibung
+                colPos = 7
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

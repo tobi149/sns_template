@@ -1,0 +1,278 @@
+// Farben ############################################
+$primary-color: #6FB3DE;
+$second-color: #F4A24C;
+$light-color: #DFE0DF;
+$dark-color: #2F4858;
+$white-color: #ffffff;
+$black-color: black;
+
+
+.display-1{
+    span {
+        background-image: linear-gradient(
+          transparent calc(65% - 5px),
+          darken(rgba(100, 155, 149, .3), 2%) 5px,
+        );
+        background-size: 0;
+        background-repeat: no-repeat;
+        display: inline;
+        transition: 0.5s ease;
+      }
+      
+      &:hover {
+        span {
+          background-size: 100%;
+        }
+      }
+}
+
+
+
+
+
+
+.bg-dark{
+  h2,
+  h4,
+  p{
+   
+      color: white!important;
+  //    opacity: .8;
+ 
+  }
+}
+p{
+    a{
+        color: black!important;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
+
+#body{
+
+
+.section-logo{
+  .logo{
+    color: $black-color;
+    font-size: 22px;
+  }
+}
+}
+
+    .bi-check-circle{
+        padding-bottom: 3px;
+    }
+
+    blockquote {
+       
+        border-left: 10px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+      }
+      blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+      }
+
+
+  
+.s-beginn{
+  
+  .c-beginn p:last-child{
+     // width: 70%;
+     padding-right: 0;
+  }
+  .c-beginn .col-beginn{
+   // padding-left: 20%;
+  }
+  .c-beginn{
+    .img-fluid{
+      width: 350px!important;
+    //  height: auto!important;
+    }
+    .span-name{
+      color: $second-color;
+    }
+    .span-art,
+    .span-web{
+      color: $primary-color
+    }
+
+  }
+}
+
+
+.s-artist{
+ 
+
+  .c-werte .bg-light{
+    padding: 3rem;
+
+    svg{
+      margin-bottom: 1.5rem;
+    }
+  }
+  .c-art-cards{
+    position: relative;
+
+    .card-img-top{
+      height: 240px;
+    }
+  }
+ 
+  .c-art-cards::after{
+    content: '';
+    position: absolute;
+    height: 295px;
+    width: 1920px;
+    /* top: 145px; */
+    bottom: 0;
+    left: 0;
+    transform: translateX(-16%);
+    max-width: 1920px;
+    background-color: $dark-color;
+    z-index: -99;
+    overflow-x: hidden;
+  }
+}
+
+.s-webentwickler{
+  .c-abstimmung{
+    padding: 3rem 0;
+ 
+    position: relative;
+overflow-y: visible;
+
+.text-box{
+  max-width: 45%
+}
+
+.col-sm-6{
+  position: relative;
+}
+    .github-profil-img{
+      position: absolute;
+    bottom: -48px;
+    right: 10%;
+    }
+  }
+
+  .c-skills{
+    .text-box{
+      max-width: 85%;
+    }
+    .skill-cards{
+      position: relative;
+      .card-backend, .card-design{
+        position: absolute;
+      }
+      .card-backend{
+        top: -120px;
+      }
+      .card-design{
+        bottom: -120px;
+      }
+    }
+  }
+}
+
+
+.s-contact{
+  .c-contact{
+    .btn-contact{
+      width: 100%;
+    }
+
+    .contact-left{
+      svg{
+        margin-left: 3px;
+        width: 30px;
+      margin-right: 1.5rem;
+      z-index: 99;
+      position: relative;
+           
+            right: -5px;
+      }
+    
+      li:first-child{
+      padding: 0;
+      &::before{
+       margin-top: 8px;
+      }
+      }
+        li{
+          list-style: none;
+          padding: 5px 0;
+    
+  
+          &::before{
+            position: absolute;
+            content: '';
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: $white-color;
+            
+                  }
+        }
+        ul{
+          padding: 0 0 0 0;
+        }
+    }
+
+
+  }
+}
+
+
+.c-project{
+
+.s-project-gallery{
+  margin-top: 4rem;
+}
+
+  .pjIMG1{
+    padding-right: 5px;
+  }
+  .pjIMG2{
+    padding-right: 5px;
+    padding-left: 0;
+  }
+  .pjIMG3{
+    padding-bottom: 5;
+  }
+  .pjIMG3,
+  .pjIMG4{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.pjIMG1 img,
+.pjIMG2 img{
+  height: 500px;
+      width: 100%!important;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: top center;
+      object-position: top center;
+}
+
+.pjIMG3 img,
+.pjIMG4 img{
+  height: 250px;
+      width: 100%!important;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: top center;
+      object-position: top center;
+}
+
+
+}

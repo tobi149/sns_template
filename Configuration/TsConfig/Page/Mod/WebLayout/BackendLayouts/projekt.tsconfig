@@ -1,0 +1,77 @@
+mod.web_layout.BackendLayouts {
+  artistproject {
+    title = Artist Project
+   config {
+      backend_layout {
+        colCount = 3
+        rowCount = 5
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Projekt Name
+                colPos = 0
+              }
+              2 {
+                name = Projekt Beschreibung
+                colspan = 2
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Projekt IMG 1
+                rowspan = 2
+                colPos = 2
+              }
+              2 {
+                name = Projekt IMG 2
+                rowspan = 2
+                colPos = 3
+              }
+              3 {
+                name = Projekt IMG 3
+                colPos = 4
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Projekt IMG 4
+                colPos = 5
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = Vorgehensweise
+                colspan = 3
+                colPos = 6
+              }
+            }
+          }
+          5 {
+            columns {
+              1 {
+                name = Wert 1
+                colPos = 7
+              }
+              2 {
+                name = Wert 2
+                colPos = 8
+              }
+              3 {
+                name = Wert 3
+                colPos = 9
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

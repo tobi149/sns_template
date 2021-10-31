@@ -1,0 +1,30 @@
+ul .list-group-item{
+    padding: 14px 0;
+}
+
+.footer{
+    .list-group{
+            a{
+                &:hover{
+                    opacity: .8;
+                }
+
+
+            }
+        }
+    
+ 
+        .container-fluid{
+            @media only screen and (max-width: 990px) {
+                a,p{
+                    font-size: 12px!important;
+                }
+    
+                
+
+
+                
+            }
+        }
+    }
+    

@@ -1,0 +1,65 @@
+mod.web_layout.BackendLayouts {
+  beginnLayout {
+    title = Beginn Layout
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 5
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Beginn - Text
+                colspan = 2
+                colPos = 0
+              }
+              2 {
+                name = Beginn - img
+                rowspan = 4
+                colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Beginn - Link 1
+                rowspan = 3
+                colPos = 2
+              }
+              2 {
+                name = Beginn - Link 2
+                rowspan = 3
+                colPos = 3
+              }
+            }
+          }
+          3 {
+            columns {
+            }
+          }
+          4 {
+            columns {
+            }
+          }
+          5 {
+            columns {
+              1 {
+                name = Zitat - img left
+                colPos = 4
+              }
+              2 {
+                name = Zitat
+                colPos = 5
+              }
+              3 {
+                name = Zitat - img right
+                colPos = 6
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
