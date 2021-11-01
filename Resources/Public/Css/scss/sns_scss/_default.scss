@@ -101,43 +101,10 @@ hr:not([size]) {
 .s-tools{
   .col{
       display: flex;
+      justify-content: space-around;
   }
-        position: relative;
-        .image:before{
-            position: absolute;
-            content: ' ';
-            height: 100px;
-            width: 100px;
-            background-color: #0c1b2e;
-            z-index: -9;
-//left: -50%;
-//bottom: -10%;
-border-radius: 50%;
-
-    
-    }
-    .frame-default{
-        min-width: 200px;
-    }
-    .frame-default:first-child{
-      
-        .image:before{
-            left: -24px;
-            bottom: -10%;
-        }
-    }
-    .frame-default:nth-child(2){
-      
-        .image:before{
-            left: -11px;
-            bottom: -21px;
-        }
-    }
-
-    .image{
-      padding-top: 4rem;
-    }
-.ce-gallery{
-     height: 200px;
-}
+  svg{
+      height: 100px;
+      width: 100px;
+  }
 }

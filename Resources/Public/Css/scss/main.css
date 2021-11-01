@@ -152,46 +152,17 @@ hr:not([size]) {
   margin: 0 0 0 0;
 }
 
-.s-tools {
-  position: relative;
-}
-
 .s-tools .col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.s-tools .image:before {
-  position: absolute;
-  content: ' ';
+.s-tools svg {
   height: 100px;
   width: 100px;
-  background-color: #0c1b2e;
-  z-index: -9;
-  border-radius: 50%;
-}
-
-.s-tools .frame-default {
-  min-width: 200px;
-}
-
-.s-tools .frame-default:first-child .image:before {
-  left: -24px;
-  bottom: -10%;
-}
-
-.s-tools .frame-default:nth-child(2) .image:before {
-  left: -11px;
-  bottom: -21px;
-}
-
-.s-tools .image {
-  padding-top: 4rem;
-}
-
-.s-tools .ce-gallery {
-  height: 200px;
 }
 
 .brand-logo {
