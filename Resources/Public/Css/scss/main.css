@@ -202,7 +202,7 @@ hr:not([size]) {
 
 .nav-social-group {
   position: absolute;
-  bottom: -200%;
+  bottom: -192px !important;
 }
 
 .nav-line-end {
@@ -509,6 +509,30 @@ ul .list-group-item {
   .footer .container-fluid a, .footer .container-fluid p {
     font-size: 12px !important;
   }
+}
+
+.footer .container .list-group-flush > .list-group-item {
+  border-width: 0 0 0 0;
+}
+
+.footer .container .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .footer-end {
+  border-top: 1px solid black;
+}
+
+.footer .container .footer-end .frame {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.footer .container .nav-link .logo {
+  font-size: 32px;
+  padding-left: 12px;
 }
 
 .sns-tup .text-top {

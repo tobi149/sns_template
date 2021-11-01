@@ -2,11 +2,14 @@
 
 <f:layout name="Default" />
 <f:section name="Main">
-    <f:debug>{_all}</f:debug>
+    <f:comment><!--<f:debug>{_all}</f:debug>--></f:comment>
 
-
+  
 
     <f:render partial="Navbar" arguments="{_all}"></f:render>
+
+
+
     <f:if condition="{data.slug}=='/'">
     <f:then>
     <div class="content">

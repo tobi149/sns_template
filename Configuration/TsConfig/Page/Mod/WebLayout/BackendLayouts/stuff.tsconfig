@@ -13,7 +13,7 @@ mod.web_layout.BackendLayouts {
                 colPos = 0
               }
               2 {
-                name = 1
+                name = Navbar - social
                 colPos = 1
               }
             }
