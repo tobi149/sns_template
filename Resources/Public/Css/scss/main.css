@@ -118,7 +118,8 @@ html.transition *:after {
 }
 
 .container {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .hr {
@@ -145,7 +146,45 @@ hr:not([size]) {
 }
 
 .s-beginn .c-beginn .col-beginn {
-  padding-left: 0px !important;
+  padding-left: 12px !important;
+  z-index: 99;
+}
+
+.s-beginn .col-img .ce-image {
+  overflow: unset !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .s-beginn .frame:last-of-type p {
+    max-width: 70%;
+  }
+  .s-beginn .col-img {
+    overflow-x: clip;
+    display: block;
+    position: absolute;
+  }
+  .s-beginn .col-img .frame {
+    right: -23%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 440px) and (min-width: 0px) {
+  .s-beginn .col-img .frame {
+    right: -41%;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 490px) and (min-width: 441px) {
+  .s-beginn .col-img .frame {
+    right: -32%;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 700px) and (min-width: 491px) {
+  .s-beginn .col-img .frame {
+    right: -20%;
+  }
 }
 
 .frame p {

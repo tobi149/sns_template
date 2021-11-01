@@ -7,8 +7,8 @@
   
 
     <f:render partial="Navbar" arguments="{_all}"></f:render>
-
-
+    <f:render partial="Beginn" arguments="{_all}"></f:render>
+<f:comment>
 
     <f:if condition="{data.slug}=='/'">
     <f:then>
@@ -39,7 +39,7 @@
 
 </f:else>
 </f:if>
-
+</f:comment>
 
     <f:render partial="Footer" arguments="{_all}"></f:render>
    
