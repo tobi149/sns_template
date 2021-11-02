@@ -101,26 +101,42 @@ hr:not([size]) {
 }
 
 
-
 .s-beginn{
   .c-beginn{
+padding-top: 0;
+.row{
+  align-items: center;
+}
+
+    @media only screen and (min-width: 992px) {
+         padding-left: 12%;
+    padding-right: 12%;
+    }
+
          .col-img{
+             padding-left: 0;
    
-        overflow-x: clip;
+     //   overflow-x: clip;
 
         .frame {
        
-        width: min-content;
+     //   width: min-content;
+
+        img{
+            max-width: 100%;
+             height: auto;
+        }
 
         }
     }  
       .col-beginn{
     z-index: 99;
+    padding-right: 0;
        @media only screen and (max-width: 991px) {
         padding-left: 24px!important;
     }
        @media only screen and (min-width: 992px) {
-        padding-left: 20%;
+        padding-left: 0!important;
     }
     }
 
