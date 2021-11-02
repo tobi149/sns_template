@@ -239,6 +239,12 @@ config {
 
 //############################# LIBS #########################
 
+
+// Navbar - social
+lib.navSocial < styles.content.get
+lib.navSocial.select.pidInList = 48
+lib.navSocial.select.where = colPos = 1
+
 // Beginn
 lib.beginnText < styles.content.get
 lib.beginnText.select.pidInList = 13

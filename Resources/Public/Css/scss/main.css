@@ -118,7 +118,8 @@ html.transition *:after {
 }
 
 .container {
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .hr {
@@ -145,53 +146,62 @@ hr:not([size]) {
 }
 
 .s-beginn .c-beginn .col-beginn {
-  padding-left: 0px !important;
+  padding-left: 12px !important;
+  z-index: 99;
+}
+
+.s-beginn .col-img .ce-image {
+  overflow: unset !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .s-beginn .frame:last-of-type p {
+    max-width: 70%;
+  }
+  .s-beginn .col-img {
+    overflow-x: clip;
+    display: block;
+    position: absolute;
+  }
+  .s-beginn .col-img .frame {
+    right: -23%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 440px) and (min-width: 0px) {
+  .s-beginn .col-img .frame {
+    right: -41%;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 490px) and (min-width: 441px) {
+  .s-beginn .col-img .frame {
+    right: -32%;
+  }
+}
+
+@media only screen and (max-width: 575px) and (max-width: 700px) and (min-width: 491px) {
+  .s-beginn .col-img .frame {
+    right: -20%;
+  }
 }
 
 .frame p {
   margin: 0 0 0 0;
 }
 
-.s-tools {
-  position: relative;
-}
-
 .s-tools .col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.s-tools .image:before {
-  position: absolute;
-  content: ' ';
+.s-tools svg {
   height: 100px;
   width: 100px;
-  background-color: #0c1b2e;
-  z-index: -9;
-  border-radius: 50%;
-}
-
-.s-tools .frame-default {
-  min-width: 200px;
-}
-
-.s-tools .frame-default:first-child .image:before {
-  left: -24px;
-  bottom: -10%;
-}
-
-.s-tools .frame-default:nth-child(2) .image:before {
-  left: -11px;
-  bottom: -21px;
-}
-
-.s-tools .image {
-  padding-top: 4rem;
-}
-
-.s-tools .ce-gallery {
-  height: 200px;
 }
 
 .brand-logo {
@@ -231,7 +241,7 @@ hr:not([size]) {
 
 .nav-social-group {
   position: absolute;
-  bottom: -200%;
+  bottom: -192px !important;
 }
 
 .nav-line-end {
@@ -538,6 +548,30 @@ ul .list-group-item {
   .footer .container-fluid a, .footer .container-fluid p {
     font-size: 12px !important;
   }
+}
+
+.footer .container .list-group-flush > .list-group-item {
+  border-width: 0 0 0 0;
+}
+
+.footer .container .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .footer-end {
+  border-top: 1px solid black;
+}
+
+.footer .container .footer-end .frame {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.footer .container .nav-link .logo {
+  font-size: 32px;
+  padding-left: 12px;
 }
 
 .sns-tup .text-top {

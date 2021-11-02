@@ -26,5 +26,32 @@ ul .list-group-item{
                 
             }
         }
+
+
+        .container{
+            .list-group-flush>.list-group-item{
+                border-width: 0 0 0 0;
+            }
+            .row{
+                justify-content: space-between;
+            }
+            .footer-end{
+                border-top: 1px solid black;
+                .frame{
+                    text-align: center;
+                    padding-top: 2rem;
+                }
+            }
+
+            .nav-link{
+                .logo{
+                    font-size: 32px;
+                    padding-left: 12px;
+                }
+            }
+            .col-to-top{
+              
+            }
+        }
     }
     
