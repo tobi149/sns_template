@@ -92,11 +92,6 @@ hr:not([size]) {
 }
 
 
-.s-beginn .c-beginn .col-beginn {
-    padding-left: 12px!important;
-    z-index: 99;
-}
-
 .s-beginn{
     .col-img{
         .ce-image{
@@ -105,34 +100,35 @@ hr:not([size]) {
     }
 }
 
-@media only screen and (max-width: 575px) {
-.s-beginn{
-    //position: relative;
-    .frame:last-of-type p{
-        max-width: 70%;
-    }
-    .col-img{
-     overflow-x: clip;
-     display: block;
-position: absolute;
-        .frame {
-           right: -23%;
-           position: absolute;
 
-           @media only screen and (max-width: 440px) and (min-width: 0px) {
-                right: -41%;
-           }
-           @media only screen and (max-width: 490px) and (min-width: 441px) {
-                right: -32%;
-            }
-            @media only screen and (max-width: 700px) and (min-width: 491px) {
-                right: -20%;
-            }
+
+.s-beginn{
+  .c-beginn{
+         .col-img{
+   
+        overflow-x: clip;
+
+        .frame {
+       
+        width: min-content;
 
         }
+    }  
+      .col-beginn{
+    z-index: 99;
+       @media only screen and (max-width: 991px) {
+        padding-left: 24px!important;
     }
+       @media only screen and (min-width: 992px) {
+        padding-left: 20%;
+    }
+    }
+
+  }
+ 
+ 
 }
-}
+
 
 
 .frame p{
