@@ -145,45 +145,33 @@ hr:not([size]) {
   border-color: #F4A24C !important;
 }
 
-.s-beginn .c-beginn .col-beginn {
-  padding-left: 12px !important;
-  z-index: 99;
-}
-
 .s-beginn .col-img .ce-image {
   overflow: unset !important;
 }
 
-@media only screen and (max-width: 575px) {
-  .s-beginn .frame:last-of-type p {
-    max-width: 70%;
-  }
-  .s-beginn .col-img {
-    overflow-x: clip;
-    display: block;
-    position: absolute;
-  }
-  .s-beginn .col-img .frame {
-    right: -23%;
-    position: absolute;
+.s-beginn .c-beginn .col-img {
+  overflow-x: clip;
+}
+
+.s-beginn .c-beginn .col-img .frame {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.s-beginn .c-beginn .col-beginn {
+  z-index: 99;
+}
+
+@media only screen and (max-width: 991px) {
+  .s-beginn .c-beginn .col-beginn {
+    padding-left: 24px !important;
   }
 }
 
-@media only screen and (max-width: 575px) and (max-width: 440px) and (min-width: 0px) {
-  .s-beginn .col-img .frame {
-    right: -41%;
-  }
-}
-
-@media only screen and (max-width: 575px) and (max-width: 490px) and (min-width: 441px) {
-  .s-beginn .col-img .frame {
-    right: -32%;
-  }
-}
-
-@media only screen and (max-width: 575px) and (max-width: 700px) and (min-width: 491px) {
-  .s-beginn .col-img .frame {
-    right: -20%;
+@media only screen and (min-width: 992px) {
+  .s-beginn .c-beginn .col-beginn {
+    padding-left: 20%;
   }
 }
 
