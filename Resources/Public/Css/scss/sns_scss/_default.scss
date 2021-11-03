@@ -105,7 +105,7 @@ hr:not([size]) {
   .c-beginn{
 padding-top: 0;
 .row{
-  align-items: center;
+  align-items: flex-end;
 }
 
     @media only screen and (min-width: 992px) {
@@ -115,16 +115,18 @@ padding-top: 0;
 
          .col-img{
              padding-left: 0;
-   
-     //   overflow-x: clip;
+             padding-right: 0;
 
         .frame {
        
-     //   width: min-content;
-
         img{
             max-width: 100%;
              height: auto;
+
+             @media only screen and (max-width: 560px) {
+                  margin-bottom: 3rem;
+             }
+            
         }
 
         }
@@ -132,6 +134,11 @@ padding-top: 0;
       .col-beginn{
     z-index: 99;
     padding-right: 0;
+    
+    h1{
+        white-space: nowrap;
+        
+    }
        @media only screen and (max-width: 991px) {
         padding-left: 24px!important;
     }
@@ -160,4 +167,10 @@ padding-top: 0;
       height: 100px;
       width: 100px;
   }
+}
+
+.btn{
+    p{
+        white-space: nowrap;
+    }
 }
