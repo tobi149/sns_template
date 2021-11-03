@@ -1,40 +1,40 @@
-    <footer class="footer bg-light  align-items-end mt-4 py-5">
+    <footer class="footer bg-light  align-items-end">
     
       <div class="container">
           <div class="row mx-0">
             <a class="nav-link p-0" aria-current="page" href="{mainnavigation.0.link}">
-              <h2 class="text-dark logo">
+              <h2 class="text-dark logo ps-md-0 ps-2">
               CVII
               </h2>
             </a>
           </div> 
-          <div class="row mx-0">
-                  <div class="col-md-3 col-6">
+          <div class="row mx-0 py-4">
+                  <div class="col-md-3 col-12 ps-md-0 pb-4">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item bg-light ps-0">
+                      <li class="list-group-item bg-light ps-0 py-1">
                       <p class="m-0">Silas Noah Stoehr</p>
                       </li>
-                      <li class="list-group-item bg-light ps-0">
+                      <li class="list-group-item bg-light ps-0 py-1">
                       <a href='mailto:kontakt@silasstoehr.de'> kontakt(at)silasstoehr.de</a><br>
                       </li>
-                      <li class="list-group-item bg-light ps-0">
+                      <li class="list-group-item bg-light ps-0 py-1">
                         <a href="{mainnavigation.0.link}">www.silasstoehr.com{mainnavigation.0.link}</a>
                       </li>
                     </ul>
                   </div>
                   <div class="col-md-3 col-6">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-light">
-                      <a class="nav-link p-0" aria-current="page" href="{mainnavigation.0.link}">Home</a>
+                    <li class="list-group-item bg-light p-0">
+                      <a class="nav-link ps-0" aria-current="page" href="{mainnavigation.0.link}">Home</a>
                     </li>
-                    <li class="list-group-item bg-light">
-                      <a class="nav-link p-0" href="#section-artist">{mainnavigation.1.title}</a>
+                    <li class="list-group-item bg-light p-0">
+                      <a class="nav-link ps-0" href="#section-artist">{mainnavigation.1.title}</a>
                     </li>
-                    <li class="list-group-item bg-light">
-                      <a class="nav-link p-0" href="#section-coding">{mainnavigation.2.title}</a>
+                    <li class="list-group-item bg-light p-0">
+                      <a class="nav-link ps-0" href="#section-coding">{mainnavigation.2.title}</a>
                     </li>
-                    <li class="list-group-item bg-light">
-                      <a class="nav-link p-0" href="#section-social">{mainnavigation.3.title}</a>
+                    <li class="list-group-item bg-light p-0">
+                      <a class="nav-link ps-0" href="#section-social">{mainnavigation.3.title}</a>
                     </li>
                   </ul>
                   </div>
@@ -48,11 +48,6 @@
                       </li>
                     </ul>
                   </div>
-          
-                  <div class="col-2 col-to-top">
-                      <a href="{mainnavigation.0.link}"><div class="sns-upm  me-3"></div>
-              <f:cObject typoscriptObjectPath="lib.totop"/></a>
-                  </div>
           </div>
           <div class="row footer-end mx-0">
           <f:cObject typoscriptObjectPath="lib.footerTex"/>
@@ -60,3 +55,9 @@
       </div>
     </footer>
 
+<f:comment><!--
+     <div class="col-2 col-to-top">
+                      <a href="{mainnavigation.0.link}"><div class="sns-upm  me-3"></div>
+              <f:cObject typoscriptObjectPath="lib.totop"/></a>
+                  </div>
+--></f:comment>
