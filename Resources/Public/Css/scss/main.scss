@@ -5,3 +5,16 @@
 @import "sns_scss/_content.scss";
 @import "sns_scss/_footer.scss";
 @import "sns_scss/_animation.scss";
+
+    // ContentElements
+    @import "sns_scss/ContentElements/contact";
+    @import "sns_scss/ContentElements/quote";
+
+        // Artist
+        @import "sns_scss/ContentElements/Artist/artistcards";
+        @import "sns_scss/ContentElements/Artist/artistproject";
+        
+        // Developer
+        @import "sns_scss/ContentElements/Developer/banner";
+        @import "sns_scss/ContentElements/Developer/webskills";
+        @import "sns_scss/ContentElements/Developer/webtools";
