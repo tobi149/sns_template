@@ -127,20 +127,6 @@ p{
     }
   }
  
-  .c-art-cards::after{
-    content: '';
-    position: absolute;
-    height: 295px;
-    width: 1920px;
-    /* top: 145px; */
-    bottom: 0;
-    left: 0;
-    transform: translateX(-16%);
-    max-width: 1920px;
-    background-color: $dark-color;
-    z-index: -99;
-    overflow-x: hidden;
-  }
 }
 
 .s-webentwickler{

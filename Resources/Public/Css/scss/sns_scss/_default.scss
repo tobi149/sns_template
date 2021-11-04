@@ -70,9 +70,19 @@ html.transition *:after {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 }
 
+.section{
+    @media only screen and (min-width: 561px) {
+        padding-top: 2.5em;
+        padding-bottom: 2.5rem;
+  }
+
+@media only screen and (max-width: 560px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+}
 
 .btn-secondary{
     background-color: $second-color!important;
@@ -205,3 +215,88 @@ img{
 
 }
 
+.c-art-cards{
+    @media only screen and (max-width: 1199px) {
+
+    .card{
+          //  max-width: 80%;
+       }
+    .col-card{
+        display: flex;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    }
+}
+
+.card{
+
+    background: rgba( 255, 255, 255, 0.25 )!important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+    backdrop-filter: blur( 2.5px )!important;
+    -webkit-backdrop-filter: blur( 2.5px )!important;
+    border-radius: 4px!important;
+  //  border: 1px solid rgba( 255, 255, 255, 0.18 )!important;
+
+    .frame{
+        transform: scale(1.007);
+    }
+    img{
+       border-radius: 4px 4px 0 0;
+    }
+}
+
+
+.cards-fluid{
+    padding: 0 0 0 0;
+    position: relative;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 1199px) {
+        .cards-fluid::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    }
+}
+
+.carousel-fluid{
+position: relative;
+padding: 0 0 0 0;
+}
+.carousel-fluid::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    }
+
+
+.carousel{
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.carousel-indicators{
+    margin-bottom: 0;
+    bottom: -33px;
+}
+
+
+.btn{
+    padding: 5px 12px;
+}
+
+.card-body{
+    .frame:first-child{
+        margin-bottom: 1rem;
+    }
+    h3{
+        margin-top: 5px;
+    }
+}
