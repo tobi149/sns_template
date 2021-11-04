@@ -61,28 +61,18 @@ html.transition *:after {
 }
 
 .container{
-  padding-top: 5rem;
-padding-bottom: 5rem;
+    @media only screen and (min-width: 561px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+  }
+
+@media only screen and (max-width: 560px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 }
 
-.hr{
-    position: relative;
-   
-}
-
-hr{
-    width: 335px;
-  position: absolute;
-  right: 42.6%;
-  bottom: 0;
-  margin: 3rem 0!important;
-  color: $dark-color;
-}
-
-hr:not([size]) {
-    height: 2px!important;
-}
 
 .btn-secondary{
     background-color: $second-color!important;
@@ -124,8 +114,9 @@ padding-top: 0;
              height: auto;
 
              @media only screen and (max-width: 560px) {
-                  margin-bottom: 3rem;
-             }
+                  margin-bottom: 2.2rem;
+                  
+                }
             
         }
 
@@ -173,4 +164,44 @@ padding-top: 0;
     p{
         white-space: nowrap;
     }
+    &:hover{
+        p{
+            color: white;
+        }
+    }
 }
+
+.btn-check:focus+.btn-outline-dark, .btn-outline-dark:focus {
+    box-shadow: none!important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.c-quote{
+     img{
+    height: unset;
+    max-width: unset;
+}
+
+.quote-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        text-align: center;
+    }
+    .frame{
+        @media only screen and (min-width: 767px) {
+             max-width: 80%;
+        }
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+}
+

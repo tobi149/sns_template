@@ -117,26 +117,18 @@ html.transition *:after {
           transform: translateY(20%);
 }
 
-.container {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+@media only screen and (min-width: 561px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
-.hr {
-  position: relative;
-}
-
-hr {
-  width: 335px;
-  position: absolute;
-  right: 42.6%;
-  bottom: 0;
-  margin: 3rem 0 !important;
-  color: #2F4858;
-}
-
-hr:not([size]) {
-  height: 2px !important;
+@media only screen and (max-width: 560px) {
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .btn-secondary {
@@ -178,7 +170,7 @@ hr:not([size]) {
 
 @media only screen and (max-width: 560px) {
   .s-beginn .c-beginn .col-img .frame img {
-    margin-bottom: 3rem;
+    margin-bottom: 2.2rem;
   }
 }
 
@@ -222,6 +214,53 @@ hr:not([size]) {
 
 .btn p {
   white-space: nowrap;
+}
+
+.btn:hover p {
+  color: white;
+}
+
+.btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.c-quote img {
+  height: unset;
+  max-width: unset;
+}
+
+.c-quote .quote-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-quote .quote-text p {
+  text-align: center;
+}
+
+.c-quote .quote-text .frame {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 767px) {
+  .c-quote .quote-text .frame {
+    max-width: 80%;
+  }
 }
 
 .brand-logo {
