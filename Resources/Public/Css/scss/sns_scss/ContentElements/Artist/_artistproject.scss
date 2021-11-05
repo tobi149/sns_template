@@ -1,0 +1,76 @@
+.c-project{
+    overflow: hidden;
+      .pjIMG1{
+      
+        @media (min-width: 1628px){
+            padding-right: 3px;
+         }
+         padding-right: 1px;
+      }
+      .pjIMG2{
+        @media (min-width: 1628px){
+            padding-right: 3px;
+         }
+         padding-right: 1px;
+        padding-left: 0;
+      }
+     
+      .pjIMG3,
+      .pjIMG4{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .pjIMG4{
+        @media (min-width: 1628px){
+            padding-top: 3px;
+         }
+         padding-top: 1px;
+      }
+    
+    .pjIMG1 img,
+    .pjIMG2 img{
+        
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: top center;
+          object-position: top center;
+          @media (min-width: 1628px){
+         height: 500px!important;
+      }
+    
+        height: 350px!important;
+     
+    }
+    
+    .pjIMG3 img,
+    .pjIMG4 img{
+        @media (min-width: 1628px){
+            height: 248.5px!important;
+         }
+       
+           height: 175px!important;
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: top center;
+          object-position: top center;
+    }
+    
+    
+    }
+
+    .projektDes,
+    .projektTitel {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .projektTitel h2{
+        margin: 0 0 0 0;
+    }
+
+    .projektDes .frame{
+        @media (max-width: 565px){
+ max-width: 80%;
+        padding-left: 14px;
+        }
+    }
