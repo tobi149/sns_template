@@ -1,31 +1,36 @@
 .c-project{
     overflow: hidden;
-      .pjIMG1{
-      
-        @media (min-width: 1628px){
-            padding-right: 3px;
-         }
-         padding-right: 1px;
-      }
-      .pjIMG2{
-        @media (min-width: 1628px){
-            padding-right: 3px;
-         }
-         padding-right: 1px;
-        padding-left: 0;
-      }
-     
+
+
+
+
+.pjIMG1{
+    padding-right: 0;
+}
+
+  .pjIMG3{
+      padding-bottom: 3px;
+  }
+     .pjIMG2{
+         padding: 0 3px;
+     }
       .pjIMG3,
       .pjIMG4{
         padding-left: 0;
         padding-right: 0;
       }
-      .pjIMG4{
-        @media (min-width: 1628px){
+     
+      @media (max-width: 767px){
+        .pjIMG4{
+            padding-left: 3px;
             padding-top: 3px;
-         }
-         padding-top: 1px;
+        }
+        .pjIMG3{
+            padding-top: 3px;
+        }
       }
+
+
     
     .pjIMG1 img,
     .pjIMG2 img{
@@ -37,9 +42,23 @@
           @media (min-width: 1628px){
          height: 500px!important;
       }
-    
+      @media (max-width: 1627px) and (min-width: 566px){
         height: 350px!important;
+     }
+    
+      @media (max-width: 767px){
+        height: 175px!important;
+     }
      
+    }
+
+
+    .pjIMG3,
+    .pjIMG4{
+        @media (max-width: 767px){
+            flex: 0 0 auto;
+          width: 50%;
+      }
     }
     
     .pjIMG3 img,
@@ -47,8 +66,9 @@
         @media (min-width: 1628px){
             height: 248.5px!important;
          }
-       
-           height: 175px!important;
+     
+            height: 175px!important;
+           
           -o-object-fit: cover;
           object-fit: cover;
           -o-object-position: top center;
@@ -64,13 +84,34 @@
         align-self: flex-end;
     }
 
-    .projektTitel h2{
-        margin: 0 0 0 0;
+.col-values{
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 991px){
+.c-werte{
+    .ce-bodytext{
+        max-width: 80%;
+    }
+}
+}
+
+
+    @media (max-width: 565px){
+    .c-werte{
+            svg{
+                width: inherit;
+                max-width: 150px;
+                position: absolute;
+                left: 12px;
+            }
+            .text-box{
+                margin-left: 40%;
+            }
+            .col-value{
+                padding: .5rem;
+            }
     }
 
-    .projektDes .frame{
-        @media (max-width: 565px){
- max-width: 80%;
-        padding-left: 14px;
-        }
+   
     }

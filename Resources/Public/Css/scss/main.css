@@ -564,6 +564,12 @@ blockquote:before {
   padding: 3rem;
 }
 
+@media (max-width: 565px) {
+  .s-artist .c-werte .bg-light {
+    padding: 2rem;
+  }
+}
+
 .s-artist .c-werte .bg-light svg {
   margin-bottom: 1.5rem;
 }
@@ -803,24 +809,15 @@ ul .list-group-item {
 }
 
 .c-project .pjIMG1 {
-  padding-right: 1px;
+  padding-right: 0;
 }
 
-@media (min-width: 1628px) {
-  .c-project .pjIMG1 {
-    padding-right: 3px;
-  }
+.c-project .pjIMG3 {
+  padding-bottom: 3px;
 }
 
 .c-project .pjIMG2 {
-  padding-right: 1px;
-  padding-left: 0;
-}
-
-@media (min-width: 1628px) {
-  .c-project .pjIMG2 {
-    padding-right: 3px;
-  }
+  padding: 0 3px;
 }
 
 .c-project .pjIMG3,
@@ -829,12 +826,12 @@ ul .list-group-item {
   padding-right: 0;
 }
 
-.c-project .pjIMG4 {
-  padding-top: 1px;
-}
-
-@media (min-width: 1628px) {
+@media (max-width: 767px) {
   .c-project .pjIMG4 {
+    padding-left: 3px;
+    padding-top: 3px;
+  }
+  .c-project .pjIMG3 {
     padding-top: 3px;
   }
 }
@@ -845,13 +842,36 @@ ul .list-group-item {
   object-fit: cover;
   -o-object-position: top center;
   object-position: top center;
-  height: 350px !important;
 }
 
 @media (min-width: 1628px) {
   .c-project .pjIMG1 img,
   .c-project .pjIMG2 img {
     height: 500px !important;
+  }
+}
+
+@media (max-width: 1627px) and (min-width: 566px) {
+  .c-project .pjIMG1 img,
+  .c-project .pjIMG2 img {
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .c-project .pjIMG1 img,
+  .c-project .pjIMG2 img {
+    height: 175px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .c-project .pjIMG3,
+  .c-project .pjIMG4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
   }
 }
 
@@ -880,14 +900,28 @@ ul .list-group-item {
       align-self: flex-end;
 }
 
-.projektTitel h2 {
-  margin: 0 0 0 0;
+.col-values {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 991px) {
+  .c-werte .ce-bodytext {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 565px) {
-  .projektDes .frame {
-    max-width: 80%;
-    padding-left: 14px;
+  .c-werte svg {
+    width: inherit;
+    max-width: 150px;
+    position: absolute;
+    left: 12px;
+  }
+  .c-werte .text-box {
+    margin-left: 40%;
+  }
+  .c-werte .col-value {
+    padding: .5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
