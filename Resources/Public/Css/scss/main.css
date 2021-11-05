@@ -372,6 +372,34 @@ img {
   }
 }
 
+body h2 {
+  font-size: 48px;
+  color: #6fb3de;
+  font-family: "Yeseva One", cursive !important;
+}
+
+body h3 {
+  font-size: 24px;
+  color: #f4a24c !important;
+}
+
+body p {
+  font-size: 16px;
+  color: var(--font);
+}
+
+@media (max-width: 767px) {
+  body h2 {
+    font-size: 32px;
+  }
+  body h3 {
+    font-size: 20px;
+  }
+  body p {
+    font-size: 12px;
+  }
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
@@ -586,10 +614,6 @@ blockquote:before {
   padding: 3rem 0;
   position: relative;
   overflow-y: visible;
-}
-
-.s-webentwickler .c-abstimmung .text-box {
-  max-width: 45%;
 }
 
 .s-webentwickler .c-abstimmung .col-sm-6 {
@@ -922,6 +946,65 @@ ul .list-group-item {
   }
   .c-werte .col-value {
     padding: .5rem;
+  }
+}
+
+@media (min-width: 1427px) {
+  .c-abstimmung::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+  }
+}
+
+.c-abstimmung .col-banner-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.c-abstimmung .col-banner-img .frame:nth-child(2) img {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .c-abstimmung .col-banner-img .frame:nth-child(2) img {
+    display: block;
+    max-width: 95%;
+  }
+}
+
+.c-abstimmung .col-banner-img .frame:first-child img {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .c-abstimmung .col-banner-img .frame:first-child img {
+    display: none;
+  }
+}
+
+.c-abstimmung .col-banner-img img {
+  height: auto;
+  overflow: hidden;
+}
+
+.c-abstimmung .col-banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 3rem;
+}
+
+@media (max-width: 1426px) {
+  .c-abstimmung .col-banner-text .text-box {
+    padding-bottom: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
