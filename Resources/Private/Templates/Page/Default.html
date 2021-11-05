@@ -10,8 +10,11 @@
     <f:render partial="Beginn" arguments="{_all}"></f:render>
     <f:render partial="Quote" arguments="{_all}"></f:render>
     <f:render partial="ArtistCards" arguments="{_all}"></f:render>
+    <f:render partial="ArtistProject" arguments="{_all}"></f:render>
+  
 <f:comment>
-
+  <f:render partial="ArtistValues" arguments="{_all}"></f:render>
+  
     <f:if condition="{data.slug}=='/'">
     <f:then>
     <div class="content">
