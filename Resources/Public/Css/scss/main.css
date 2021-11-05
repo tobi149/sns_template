@@ -564,6 +564,12 @@ blockquote:before {
   padding: 3rem;
 }
 
+@media (max-width: 565px) {
+  .s-artist .c-werte .bg-light {
+    padding: 2rem;
+  }
+}
+
 .s-artist .c-werte .bg-light svg {
   margin-bottom: 1.5rem;
 }
@@ -894,14 +900,28 @@ ul .list-group-item {
       align-self: flex-end;
 }
 
-.projektTitel h2 {
-  margin: 0 0 0 0;
+.col-values {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 991px) {
+  .c-werte .ce-bodytext {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 565px) {
-  .projektDes .frame {
-    max-width: 80%;
-    padding-left: 14px;
+  .c-werte svg {
+    width: inherit;
+    max-width: 150px;
+    position: absolute;
+    left: 12px;
+  }
+  .c-werte .text-box {
+    margin-left: 40%;
+  }
+  .c-werte .col-value {
+    padding: .5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

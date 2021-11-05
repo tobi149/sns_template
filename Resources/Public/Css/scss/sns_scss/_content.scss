@@ -114,6 +114,9 @@ p{
 
   .c-werte .bg-light{
     padding: 3rem;
+    @media (max-width: 565px){
+      padding: 2rem;
+    }
 
     svg{
       margin-bottom: 1.5rem;
