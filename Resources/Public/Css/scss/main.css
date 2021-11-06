@@ -151,6 +151,14 @@ html.transition *:after {
   border-color: #F4A24C !important;
 }
 
+.s-beginn .col-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
 .s-beginn .col-img .ce-image {
   overflow: unset !important;
 }
@@ -191,10 +199,6 @@ html.transition *:after {
 .s-beginn .c-beginn .col-beginn {
   z-index: 99;
   padding-right: 0;
-}
-
-.s-beginn .c-beginn .col-beginn h1 {
-  white-space: nowrap;
 }
 
 @media only screen and (max-width: 991px) {
