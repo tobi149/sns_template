@@ -341,6 +341,12 @@ img {
   background-color: white;
 }
 
+@media (max-width: 767px) {
+  .carousel-fluid::before {
+    height: 40%;
+  }
+}
+
 .carousel {
   margin-bottom: 14px;
   margin-top: 14px;
@@ -402,6 +408,10 @@ body p {
   body p {
     font-size: 12px;
   }
+}
+
+body .bg-primary h2 {
+  color: #0c1b2e !important;
 }
 
 .brand-logo {
@@ -1009,6 +1019,33 @@ ul .list-group-item {
 @media (max-width: 1426px) {
   .c-abstimmung .col-banner-text .text-box {
     padding-bottom: 3rem;
+  }
+}
+
+.c-skills .col-card-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-tools div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.c-tools .frame svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.c-tools .s-tools .frame svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .c-tools .s-tools .frame svg {
+    max-width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */
