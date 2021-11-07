@@ -344,3 +344,10 @@ padding: 0 0 0 0;
    body .bg-primary h2{
         color: #0c1b2e!important;
     }
+
+    body hr{
+        margin: 0 auto;
+        @media (max-width:565px){
+            width: 50%;
+        }
+    }

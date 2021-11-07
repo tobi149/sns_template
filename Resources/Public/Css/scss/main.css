@@ -414,6 +414,16 @@ body .bg-primary h2 {
   color: #0c1b2e !important;
 }
 
+body hr {
+  margin: 0 auto;
+}
+
+@media (max-width: 565px) {
+  body hr {
+    width: 50%;
+  }
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
@@ -840,6 +850,16 @@ ul .list-group-item {
 
 .sns-flipcard {
   background-color: #fff !important;
+}
+
+@media (max-width: 992px) {
+  .contact-right .row .col-sm-6 {
+    width: 100% !important;
+  }
+}
+
+.form-check {
+  padding-left: 0;
 }
 
 .c-project {
