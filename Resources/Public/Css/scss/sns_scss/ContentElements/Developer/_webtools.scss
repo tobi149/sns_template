@@ -1,0 +1,23 @@
+.c-tools{
+
+div{
+    justify-content: space-around;
+}
+
+.frame svg{
+    display: block;
+    margin: 0 auto;
+}
+
+    .s-tools{
+        .frame svg{
+            max-width: 100%;
+            height: auto;
+            @media (max-width: 767px){
+                max-width: 60%;
+            }
+        }
+
+    }
+
+}

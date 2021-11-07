@@ -385,9 +385,17 @@ lib.totop.select.pidInList = 48
 lib.webTools < styles.content.get
 lib.webTools.select.pidInList = 28
 
-lib.webToolsIco < styles.content.get
-lib.webToolsIco.select.pidInList = 28
-lib.webToolsIco.select.where = colPos = 1
+lib.webToolsRow1 < styles.content.get
+lib.webToolsRow1.select.pidInList = 28
+lib.webToolsRow1.select.where = colPos = 1
+
+lib.webToolsRow2 < styles.content.get
+lib.webToolsRow2.select.pidInList = 28
+lib.webToolsRow2.select.where = colPos = 2
+
+lib.webToolsRow3 < styles.content.get
+lib.webToolsRow3.select.pidInList = 28
+lib.webToolsRow3.select.where = colPos = 3
 
 // Contact
 lib.contact < styles.content.get 

@@ -1027,4 +1027,25 @@ ul .list-group-item {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.c-tools div {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.c-tools .frame svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.c-tools .s-tools .frame svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .c-tools .s-tools .frame svg {
+    max-width: 60%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
