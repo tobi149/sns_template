@@ -1,3 +1,11 @@
+// Farben ############################################
+$primary-color: #6FB3DE;
+$second-color: #F4A24C;
+$light-color: #DFE0DF;
+$dark-color: #2F4858;
+$white-color: #ffffff;
+$black-color: black;
+
 .c-project{
     overflow: hidden;
 
@@ -86,6 +94,7 @@
 
 .col-values{
     margin-top: 1.5rem;
+    
 }
 
 @media (min-width: 991px){
@@ -114,4 +123,12 @@
     }
 
    
+    }
+
+
+    html body .col-values {
+        h3{
+            color: $dark-color!important;
+            font-weight: bold;
+        }
     }

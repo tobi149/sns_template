@@ -151,6 +151,11 @@ html.transition *:after {
   border-color: #F4A24C !important;
 }
 
+.btn-outline-secondary {
+  color: #F4A24C !important;
+  border-color: #F4A24C !important;
+}
+
 .s-beginn .col-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,10 +172,26 @@ html.transition *:after {
   padding-top: 0;
 }
 
-.s-beginn .c-beginn .row {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+@media (min-width: 768px) {
+  .s-beginn .c-beginn > .row {
+    min-height: 63vH;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .s-beginn .c-beginn > .row .col-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-beginn .c-beginn .row {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -230,6 +251,10 @@ html.transition *:after {
   width: 100px;
 }
 
+.btn {
+  font-size: 14px;
+}
+
 .btn p {
   white-space: nowrap;
 }
@@ -246,6 +271,11 @@ html.transition *:after {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.c-quote strong {
+  color: #F4A24C;
+  margin-bottom: 1.5rem;
 }
 
 .c-quote img {
@@ -358,7 +388,7 @@ img {
 }
 
 .btn {
-  padding: 5px 12px;
+  padding: 10px 15px;
   -webkit-appearance: none !important;
 }
 
@@ -382,14 +412,18 @@ img {
   }
 }
 
+body .projektTitel h2, body .s-contact h2 {
+  color: #6FB3DE;
+}
+
 body h2 {
   font-size: 48px;
-  color: #6fb3de;
+  color: #2F4858;
   font-family: "Yeseva One", cursive !important;
 }
 
 body h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: #f4a24c !important;
 }
 
@@ -403,7 +437,7 @@ body p {
     font-size: 32px;
   }
   body h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
   body p {
     font-size: 12px;
@@ -858,6 +892,19 @@ ul .list-group-item {
   }
 }
 
+.contact-right .btn-toolbar, .contact-right .btn-group {
+  display: block !important;
+}
+
+.contact-right .btn {
+  width: 100%;
+}
+
+.contact-right .btn-primary {
+  background-color: #F4A24C !important;
+  border-color: #F4A24C !important;
+}
+
 .form-check {
   padding-left: 0;
 }
@@ -983,6 +1030,11 @@ ul .list-group-item {
   }
 }
 
+html body .col-values h3 {
+  color: #2F4858 !important;
+  font-weight: bold;
+}
+
 @media (min-width: 1427px) {
   .c-abstimmung::before {
     content: ' ';
@@ -1046,6 +1098,19 @@ ul .list-group-item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media (min-width: 767px) {
+  .c-skills .bg-primary {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+
+.c-skills .text-box p {
+  border-left: #2F4858 1px solid;
+  margin-left: 4px;
+  padding-left: 10%;
 }
 
 .c-tools div {

@@ -1,5 +1,20 @@
+$dark-color: #2F4858;
+
 .c-skills{
     .col-card-1{
         align-self: center;
+    }
+
+    @media (min-width: 767px){
+        .bg-primary{
+            padding-left: 10%!important;
+            padding-right: 10%!important;
+        }
+    }
+
+    .text-box p{
+            border-left: $dark-color 1px solid;
+            margin-left: 4px;
+            padding-left: 10%;
     }
 }

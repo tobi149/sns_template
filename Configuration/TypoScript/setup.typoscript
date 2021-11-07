@@ -401,6 +401,17 @@ lib.webToolsRow3.select.where = colPos = 3
 lib.contact < styles.content.get 
 lib.contact.select.pidInList = 32
 
+lib.contactTitle < styles.content.get 
+lib.contactTitle.select.pidInList = 51
+
+lib.contactContent < styles.content.get 
+lib.contactContent.select.pidInList = 51
+lib.contactContent.select.where = colPos = 1
+
+lib.contactTitleRight < styles.content.get 
+lib.contactTitleRight.select.pidInList = 51
+lib.contactTitleRight.select.where = colPos = 2
+
 // Meta
 lib.error < styles.content.get
 lib.error.select.pidInList = 6
