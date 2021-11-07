@@ -91,6 +91,11 @@ html.transition *:after {
 
 }
 
+.btn-outline-secondary{
+    color: $second-color!important;
+    border-color: $second-color!important;
+}
+
 
 .s-beginn{
     .col-img{
@@ -106,9 +111,25 @@ html.transition *:after {
 .s-beginn{
   .c-beginn{
 padding-top: 0;
-.row{
-  align-items: flex-end;
+
+@media (min-width: 768px){
+     > .row{
+        min-height: 63vH;
+        align-items: center;
+
+        .col-img{
+                align-self: center;
+        }
+    }
 }
+@media (max-width: 767px){
+    .row{
+            align-items: flex-end
+        }
+}
+
+   
+
 
     @media only screen and (min-width: 992px) {
          padding-left: 12%;
@@ -173,6 +194,7 @@ padding-top: 0;
 }
 
 .btn{
+    font-size: 14px;
     p{
         white-space: nowrap;
     }
@@ -193,9 +215,15 @@ img{
 }
 
 .c-quote{
+    strong{
+        color: $second-color;
+        margin-bottom: 1.5rem;
+    }
      img{
     height: unset;
     max-width: unset;
+
+   
 }
 
 .quote-text{
@@ -295,7 +323,7 @@ padding: 0 0 0 0;
 
 
 .btn{
-    padding: 5px 12px;
+    padding: 10px 15px;
     -webkit-appearance: none!important;
 }
 
@@ -320,9 +348,12 @@ padding: 0 0 0 0;
       }
     }
 
+body .projektTitel h2, body .s-contact h2{
+    color: $primary-color;
+}
 
-    body h2{font-size:48px;color:#6fb3de;font-family:"Yeseva One",cursive!important}
-    body h3{font-size:24px;color: #f4a24c!important;}
+    body h2{font-size:48px;color:#2F4858;font-family:"Yeseva One",cursive!important}
+    body h3{font-size:20px;color: #f4a24c!important;}
     body p{font-size:16px;color:var(--font)}
     @media (max-width: 767px){
         body{
@@ -330,7 +361,7 @@ padding: 0 0 0 0;
             font-size: 32px;
         }
         h3{
-            font-size: 20px;
+            font-size: 16px;
         }
         p{
             font-size: 12px;
@@ -343,4 +374,11 @@ padding: 0 0 0 0;
 
    body .bg-primary h2{
         color: #0c1b2e!important;
+    }
+
+    body hr{
+        margin: 0 auto;
+        @media (max-width:565px){
+            width: 50%;
+        }
     }

@@ -1,0 +1,31 @@
+// Farben ############################################
+$primary-color: #6FB3DE;
+$second-color: #F4A24C;
+$light-color: #DFE0DF;
+$dark-color: #2F4858;
+$white-color: #ffffff;
+$black-color: black;
+
+.contact-right{
+
+    @media (max-width: 992px){
+        .row .col-sm-6{
+        width: 100%!important;
+        }
+    }
+.btn-toolbar, .btn-group{
+    display: block!important;
+}
+    .btn{
+        width: 100%;
+    }
+    .btn-primary{
+            background-color: $second-color!important;
+            border-color: $second-color!important;
+    }
+  
+}
+
+.form-check{
+    padding-left: 0;
+}
