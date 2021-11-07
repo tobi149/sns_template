@@ -341,6 +341,12 @@ img {
   background-color: white;
 }
 
+@media (max-width: 767px) {
+  .carousel-fluid::before {
+    height: 40%;
+  }
+}
+
 .carousel {
   margin-bottom: 14px;
   margin-top: 14px;
@@ -402,6 +408,10 @@ body p {
   body p {
     font-size: 12px;
   }
+}
+
+body .bg-primary h2 {
+  color: #0c1b2e !important;
 }
 
 .brand-logo {
@@ -1010,5 +1020,11 @@ ul .list-group-item {
   .c-abstimmung .col-banner-text .text-box {
     padding-bottom: 3rem;
   }
+}
+
+.c-skills .col-card-1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=main.css.map */
