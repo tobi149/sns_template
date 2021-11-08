@@ -119,8 +119,8 @@ html.transition *:after {
 
 @media only screen and (min-width: 561px) {
   .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -151,9 +151,19 @@ html.transition *:after {
   border-color: #F4A24C !important;
 }
 
+.btn-secondary:hover {
+  color: #F4A24C !important;
+  background-color: #ffffff !important;
+}
+
 .btn-outline-secondary {
   color: #F4A24C !important;
   border-color: #F4A24C !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #ffffff !important;
+  background-color: #F4A24C !important;
 }
 
 .s-beginn .col-img {
@@ -263,6 +273,11 @@ html.transition *:after {
   color: white;
 }
 
+.btn:focus, .btn:focus-visible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -345,7 +360,6 @@ img {
 .cards-fluid {
   padding: 0 0 0 0;
   position: relative;
-  z-index: -1;
 }
 
 @media only screen and (min-width: 1199px) {
@@ -458,6 +472,10 @@ body hr {
   }
 }
 
+body a:hover {
+  color: #F4A24C;
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
@@ -523,7 +541,6 @@ body hr {
   position: absolute;
   left: 48%;
   top: -31%;
-  opacity: .5;
 }
 
 .tooltiptext {
@@ -757,7 +774,7 @@ ul .list-group-item {
   position: absolute;
   height: 60px;
   width: 60px;
-  background-color: #DFE0DF;
+  background-color: #6FB3DE;
   top: -30px;
   border-radius: 50%;
 }
@@ -797,7 +814,7 @@ ul .list-group-item {
 }
 
 .footer .container .footer-end {
-  border-top: 1px solid black;
+  border-top: 1px solid #2F4858;
 }
 
 .footer .container .footer-end .frame {
@@ -905,8 +922,37 @@ ul .list-group-item {
   border-color: #F4A24C !important;
 }
 
+.contact-right .btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #F4A24C !important;
+}
+
 .form-check {
   padding-left: 0;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #2F4858;
+}
+
+.form-control {
+  border: 1px solid #ffffff;
+}
+
+.actions {
+  margin-top: 1.5rem;
+}
+
+textarea {
+  min-height: 150px !important;
+}
+
+@media (min-width: 767px) {
+  .contact-left .frame:last-child {
+    margin: 2.5rem 0;
+  }
 }
 
 .c-project {
@@ -1036,6 +1082,9 @@ html body .col-values h3 {
 }
 
 @media (min-width: 1427px) {
+  .c-abstimmung {
+    margin: 8rem 0;
+  }
   .c-abstimmung::before {
     content: ' ';
     position: absolute;

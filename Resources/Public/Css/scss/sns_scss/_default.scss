@@ -62,8 +62,8 @@ html.transition *:after {
 
 .container{
     @media only screen and (min-width: 561px) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
   }
 
 @media only screen and (max-width: 560px) {
@@ -89,11 +89,20 @@ html.transition *:after {
     color: $white-color!important;
     border-color: $second-color!important;
 
+    &:hover{
+        color: $second-color!important;
+        background-color: $white-color!important;
+    }
+
 }
 
 .btn-outline-secondary{
     color: $second-color!important;
     border-color: $second-color!important;
+    &:hover{
+        color: $white-color!important;
+        background-color:$second-color!important;
+    }
 }
 
 
@@ -205,6 +214,11 @@ padding-top: 0;
     }
 }
 
+
+.btn:focus, .btn:focus-visible{
+    box-shadow: none;
+}
+
 .btn-check:focus+.btn-outline-dark, .btn-outline-dark:focus {
     box-shadow: none!important;
 }
@@ -281,7 +295,7 @@ img{
 .cards-fluid{
     padding: 0 0 0 0;
     position: relative;
-    z-index: -1;
+    //z-index: -1;
 }
 
 @media only screen and (min-width: 1199px) {
@@ -381,4 +395,9 @@ body .projektTitel h2, body .s-contact h2{
         @media (max-width:565px){
             width: 50%;
         }
+    }
+
+
+    body a:hover{
+        color: $second-color;
     }
