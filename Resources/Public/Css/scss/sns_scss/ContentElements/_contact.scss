@@ -2,7 +2,7 @@
 $primary-color: #6FB3DE;
 $second-color: #F4A24C;
 $light-color: #DFE0DF;
-$dark-color: #2F4858;
+$dark-color: #0c1b2e;
 $white-color: #ffffff;
 $black-color: black;
 
@@ -22,10 +22,41 @@ $black-color: black;
     .btn-primary{
             background-color: $second-color!important;
             border-color: $second-color!important;
+
+            &:hover{
+                background-color: $white-color!important;
+                color: $second-color!important;
+            }
     }
   
 }
 
 .form-check{
     padding-left: 0;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: $dark-color;
+}
+
+.form-control{
+    border: 1px solid $white-color;
+}
+
+.actions{
+    margin-top: 1.5rem;
+}
+
+textarea{
+    min-height: 150px!important;
+}
+
+
+.contact-left{
+    @media (min-width: 767px){
+        .frame:last-child{
+            margin: 2.5rem 0;
+        }
+    } 
 }

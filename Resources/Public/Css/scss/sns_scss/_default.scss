@@ -62,8 +62,8 @@ html.transition *:after {
 
 .container{
     @media only screen and (min-width: 561px) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
   }
 
 @media only screen and (max-width: 560px) {
@@ -89,11 +89,20 @@ html.transition *:after {
     color: $white-color!important;
     border-color: $second-color!important;
 
+    &:hover{
+        color: $second-color!important;
+        background-color: $white-color!important;
+    }
+
 }
 
 .btn-outline-secondary{
     color: $second-color!important;
     border-color: $second-color!important;
+    &:hover{
+        color: $white-color!important;
+        background-color:$second-color!important;
+    }
 }
 
 
@@ -195,6 +204,7 @@ padding-top: 0;
 
 .btn{
     font-size: 14px;
+    white-space: nowrap;
     p{
         white-space: nowrap;
     }
@@ -203,6 +213,11 @@ padding-top: 0;
             color: white;
         }
     }
+}
+
+
+.btn:focus, .btn:focus-visible{
+    box-shadow: none;
 }
 
 .btn-check:focus+.btn-outline-dark, .btn-outline-dark:focus {
@@ -281,7 +296,7 @@ img{
 .cards-fluid{
     padding: 0 0 0 0;
     position: relative;
-    z-index: -1;
+    //z-index: -1;
 }
 
 @media only screen and (min-width: 1199px) {
@@ -351,8 +366,7 @@ padding: 0 0 0 0;
 body .projektTitel h2, body .s-contact h2{
     color: $primary-color;
 }
-
-    body h2{font-size:48px;color:#2F4858;font-family:"Yeseva One",cursive!important}
+    body h2{font-size:48px;color:#0c1b2e;font-family:"Yeseva One",cursive!important}
     body h3{font-size:20px;color: #f4a24c!important;}
     body p{font-size:16px;color:var(--font)}
     @media (max-width: 767px){
@@ -381,4 +395,9 @@ body .projektTitel h2, body .s-contact h2{
         @media (max-width:565px){
             width: 50%;
         }
+    }
+
+
+    body a:hover{
+        color: $second-color;
     }

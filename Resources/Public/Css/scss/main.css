@@ -119,8 +119,8 @@ html.transition *:after {
 
 @media only screen and (min-width: 561px) {
   .container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -151,9 +151,19 @@ html.transition *:after {
   border-color: #F4A24C !important;
 }
 
+.btn-secondary:hover {
+  color: #F4A24C !important;
+  background-color: #ffffff !important;
+}
+
 .btn-outline-secondary {
   color: #F4A24C !important;
   border-color: #F4A24C !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #ffffff !important;
+  background-color: #F4A24C !important;
 }
 
 .s-beginn .col-img {
@@ -253,6 +263,7 @@ html.transition *:after {
 
 .btn {
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .btn p {
@@ -261,6 +272,11 @@ html.transition *:after {
 
 .btn:hover p {
   color: white;
+}
+
+.btn:focus, .btn:focus-visible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
@@ -345,7 +361,6 @@ img {
 .cards-fluid {
   padding: 0 0 0 0;
   position: relative;
-  z-index: -1;
 }
 
 @media only screen and (min-width: 1199px) {
@@ -418,7 +433,7 @@ body .projektTitel h2, body .s-contact h2 {
 
 body h2 {
   font-size: 48px;
-  color: #2F4858;
+  color: #0c1b2e;
   font-family: "Yeseva One", cursive !important;
 }
 
@@ -456,6 +471,10 @@ body hr {
   body hr {
     width: 50%;
   }
+}
+
+body a:hover {
+  color: #F4A24C;
 }
 
 .brand-logo {
@@ -523,7 +542,6 @@ body hr {
   position: absolute;
   left: 48%;
   top: -31%;
-  opacity: .5;
 }
 
 .tooltiptext {
@@ -752,12 +770,16 @@ ul .list-group-item {
   margin-top: 30px;
 }
 
+.footer a:hover {
+  color: #0c1b2e;
+}
+
 .footer .link-to-top {
   content: ' ';
   position: absolute;
   height: 60px;
   width: 60px;
-  background-color: #DFE0DF;
+  background-color: #6FB3DE;
   top: -30px;
   border-radius: 50%;
 }
@@ -797,7 +819,7 @@ ul .list-group-item {
 }
 
 .footer .container .footer-end {
-  border-top: 1px solid black;
+  border-top: 1px solid #0c1b2e;
 }
 
 .footer .container .footer-end .frame {
@@ -810,7 +832,7 @@ ul .list-group-item {
 }
 
 .footer .nav-link {
-  color: black;
+  color: #0c1b2e;
 }
 
 .sns-tup .text-top {
@@ -905,8 +927,37 @@ ul .list-group-item {
   border-color: #F4A24C !important;
 }
 
+.contact-right .btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #F4A24C !important;
+}
+
 .form-check {
   padding-left: 0;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #0c1b2e;
+}
+
+.form-control {
+  border: 1px solid #ffffff;
+}
+
+.actions {
+  margin-top: 1.5rem;
+}
+
+textarea {
+  min-height: 150px !important;
+}
+
+@media (min-width: 767px) {
+  .contact-left .frame:last-child {
+    margin: 2.5rem 0;
+  }
 }
 
 .c-project {
@@ -1031,11 +1082,14 @@ ul .list-group-item {
 }
 
 html body .col-values h3 {
-  color: #2F4858 !important;
+  color: #0c1b2e !important;
   font-weight: bold;
 }
 
 @media (min-width: 1427px) {
+  .c-abstimmung {
+    margin: 8rem 0;
+  }
   .c-abstimmung::before {
     content: ' ';
     position: absolute;
@@ -1111,6 +1165,10 @@ html body .col-values h3 {
   border-left: #2F4858 1px solid;
   margin-left: 4px;
   padding-left: 10%;
+}
+
+.c-skills .card-body {
+  padding: 2rem;
 }
 
 .c-tools div {

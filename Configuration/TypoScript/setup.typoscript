@@ -422,3 +422,11 @@ lib.cookieText.select.pidInList = 19
 lib.cookieBtn < styles.content.get
 lib.cookieBtn.select.pidInList = 19
 lib.cookieBtn.select.where = colPos = 1
+
+// Impressum
+lib.impressum < styles.content.get
+lib.impressum.select.pidInList = 9
+
+// Datenschutz
+lib.datenschutz < styles.content.get
+lib.datenschutz.select.pidInList = 8
