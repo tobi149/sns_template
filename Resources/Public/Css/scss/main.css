@@ -263,6 +263,7 @@ html.transition *:after {
 
 .btn {
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .btn p {
@@ -432,7 +433,7 @@ body .projektTitel h2, body .s-contact h2 {
 
 body h2 {
   font-size: 48px;
-  color: #2F4858;
+  color: #0c1b2e;
   font-family: "Yeseva One", cursive !important;
 }
 
@@ -769,6 +770,10 @@ ul .list-group-item {
   margin-top: 30px;
 }
 
+.footer a:hover {
+  color: #0c1b2e;
+}
+
 .footer .link-to-top {
   content: ' ';
   position: absolute;
@@ -814,7 +819,7 @@ ul .list-group-item {
 }
 
 .footer .container .footer-end {
-  border-top: 1px solid #2F4858;
+  border-top: 1px solid #0c1b2e;
 }
 
 .footer .container .footer-end .frame {
@@ -827,7 +832,7 @@ ul .list-group-item {
 }
 
 .footer .nav-link {
-  color: black;
+  color: #0c1b2e;
 }
 
 .sns-tup .text-top {
@@ -934,7 +939,7 @@ ul .list-group-item {
 .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #2F4858;
+  border-color: #0c1b2e;
 }
 
 .form-control {
@@ -1077,7 +1082,7 @@ textarea {
 }
 
 html body .col-values h3 {
-  color: #2F4858 !important;
+  color: #0c1b2e !important;
   font-weight: bold;
 }
 
@@ -1160,6 +1165,10 @@ html body .col-values h3 {
   border-left: #2F4858 1px solid;
   margin-left: 4px;
   padding-left: 10%;
+}
+
+.c-skills .card-body {
+  padding: 2rem;
 }
 
 .c-tools div {

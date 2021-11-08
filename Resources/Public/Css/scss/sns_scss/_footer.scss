@@ -2,7 +2,7 @@
     $primary-color: #6FB3DE;
     $second-color: #F4A24C;
     $light-color: #DFE0DF;
-    $dark-color: #2F4858;
+    $dark-color: #0c1b2e;
     $white-color: #ffffff;
     $black-color: black;
 
@@ -14,8 +14,10 @@ ul .list-group-item{
 position: relative;
 margin-top: 30px;
 
-&::before{
-   
+
+
+a:hover{
+    color: $dark-color;
 }
 
 
@@ -94,7 +96,7 @@ margin-top: 30px;
         }
 
         .nav-link{
-            color: black;
+            color: $dark-color;
         }
     }
     

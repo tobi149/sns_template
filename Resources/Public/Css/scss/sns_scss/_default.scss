@@ -204,6 +204,7 @@ padding-top: 0;
 
 .btn{
     font-size: 14px;
+    white-space: nowrap;
     p{
         white-space: nowrap;
     }
@@ -365,8 +366,7 @@ padding: 0 0 0 0;
 body .projektTitel h2, body .s-contact h2{
     color: $primary-color;
 }
-
-    body h2{font-size:48px;color:#2F4858;font-family:"Yeseva One",cursive!important}
+    body h2{font-size:48px;color:#0c1b2e;font-family:"Yeseva One",cursive!important}
     body h3{font-size:20px;color: #f4a24c!important;}
     body p{font-size:16px;color:var(--font)}
     @media (max-width: 767px){
