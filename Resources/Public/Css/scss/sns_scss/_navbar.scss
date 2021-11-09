@@ -126,3 +126,16 @@
   .xing-icon{
       margin-left: 6px;
   }
+
+
+  .section-logo{
+
+    .justify-content-end > p {
+        opacity: .75;
+        text-decoration: underline;
+    }
+    .justify-content-end a:hover{
+        text-decoration: underline;
+        color: #2F4858;
+    }
+  }

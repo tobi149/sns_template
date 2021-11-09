@@ -412,3 +412,15 @@ body .projektTitel h2, body .s-contact h2{
         overflow: hidden;
         display: block;
     }
+
+
+       
+    .btn, .btn p, .btn a, button{
+        font-family: "Yeseva One",cursive!important;
+    }
+
+    body a{
+        color: $dark-color;
+        text-decoration: none;
+       
+    }
