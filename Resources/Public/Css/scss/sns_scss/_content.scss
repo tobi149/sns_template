@@ -223,3 +223,42 @@ overflow-y: visible;
 
   }
 }
+
+
+
+
+.btn-outline-dark{
+  .insta-icon {
+  margin: 0 4px 2px 0;
+  fill: black!important;
+  g{
+    fill: black!important;
+  }
+}
+&:hover{
+  .insta-icon{
+    fill: white!important;
+    g{
+      fill: white!important;
+    }
+  }
+}
+}
+
+.btn-secondary{
+  .insta-icon {
+    margin: 0 4px 2px 0;
+    fill: white!important;
+    g{
+      fill: white!important;
+    }
+  }
+  &:hover{
+    .insta-icon{
+      fill: $second-color!important;
+      g{
+        fill: $second-color!important;
+      }
+    }
+  }
+}

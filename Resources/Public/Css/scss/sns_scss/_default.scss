@@ -67,8 +67,8 @@ html.transition *:after {
   }
 
 @media only screen and (max-width: 560px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 }
 
@@ -304,7 +304,7 @@ img{
     content: ' ';
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 45%;
     background-color: white;
     }
 }
@@ -317,7 +317,7 @@ padding: 0 0 0 0;
     content: ' ';
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 45%;
     background-color: white;
 
     @media (max-width: 767px){
@@ -333,12 +333,12 @@ padding: 0 0 0 0;
 
 .carousel-indicators{
     margin-bottom: 0;
-    bottom: -33px;
+    bottom: 7px;
 }
 
 
 .btn{
-    padding: 10px 15px;
+    padding: 6px 15px;
     -webkit-appearance: none!important;
 }
 
@@ -400,4 +400,15 @@ body .projektTitel h2, body .s-contact h2{
 
     body a:hover{
         color: $second-color;
+    }
+
+    body .carousel-indicators [data-bs-target]{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+
+    .c-datenschutz{
+        overflow: hidden;
+        display: block;
     }
