@@ -495,6 +495,7 @@ body .carousel-indicators [data-bs-target] {
 body a {
   color: #2F4858;
   text-decoration: none;
+  font-family: "Yeseva One", cursive !important;
 }
 
 .brand-logo {
@@ -538,8 +539,21 @@ body a {
 }
 
 .nav-social-group {
-  position: absolute;
-  bottom: -192px !important;
+  left: 24px;
+  bottom: 2rem;
+  display: none;
+  z-index: 99999;
+}
+
+.nav-social-group a {
+  display: block;
+  z-index: 999;
+}
+
+@media (min-width: 1200px) {
+  .nav-social-group {
+    display: block;
+  }
 }
 
 .nav-social-group .frame {
@@ -612,7 +626,7 @@ body a {
 }
 
 .xing-icon {
-  margin-left: 6px;
+  margin-left: 4px;
 }
 
 .section-logo .justify-content-end > p {
@@ -897,6 +911,30 @@ ul .list-group-item {
 
 .footer .nav-link {
   color: #0c1b2e;
+}
+
+.footer .col-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .footer .col-badge {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .col-badge {
+    margin-top: 1.5rem;
+  }
+}
+
+.footer .col-badge img {
+  mix-blend-mode: overlay;
 }
 
 .sns-tup .text-top {

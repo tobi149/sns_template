@@ -375,6 +375,10 @@ lib.webskillC3.select.where = colPos = 3
 lib.footerTex < styles.content.get
 lib.footerTex.select.pidInList = 7
 
+lib.footerBadge < styles.content.get
+lib.footerBadge.select.pidInList = 7
+lib.footerBadge.select.where = colPos = 1
+
 // Stuf
 lib.totop < styles.content.get
 lib.totop.select.pidInList = 48

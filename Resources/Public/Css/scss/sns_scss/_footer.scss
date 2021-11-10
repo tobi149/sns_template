@@ -98,5 +98,21 @@ a:hover{
         .nav-link{
             color: $dark-color;
         }
+
+
+            .col-badge{
+                display: flex;
+              
+                 @media (min-width: 768px){
+                        justify-content: end;
+                }
+                 @media (max-width: 767px){
+margin-top: 1.5rem;
+                 }
+    img{
+        mix-blend-mode: overlay;
+    }
+            } 
+
     }
     
