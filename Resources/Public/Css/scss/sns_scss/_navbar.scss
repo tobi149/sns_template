@@ -40,8 +40,19 @@
 }
 
 .nav-social-group{
-   position: absolute;
-   bottom: -192px!important;
+  left: 24px;
+  bottom: 2rem;
+  display: none;
+  z-index: 99999;
+
+a{
+    display: block;
+    z-index: 999;
+}
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
   .frame{
       margin: 8px 0;
       opacity: .8;
@@ -124,7 +135,7 @@
 
   
   .xing-icon{
-      margin-left: 6px;
+      margin-left: 4px;
   }
 
 
