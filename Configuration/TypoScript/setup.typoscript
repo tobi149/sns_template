@@ -191,10 +191,10 @@ page {
 	40 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js
 	50 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js.map
 	
-	smpt = https://www.smtpjs.com/v3/smtp.js
-	smpt.external = 1
-	alert = https://unpkg.com/sweetalert/dist/sweetalert.min.js
-	alert.external = 1
+	#smpt = https://www.smtpjs.com/v3/smtp.js
+	#smpt.external = 1
+	#alert = https://unpkg.com/sweetalert/dist/sweetalert.min.js
+	#alert.external = 1
 
     }
 }
