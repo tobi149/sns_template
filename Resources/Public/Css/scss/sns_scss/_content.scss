@@ -112,7 +112,7 @@ p{
 .s-artist{
  
 
-  .c-werte .bg-light{
+  .c-werte .bg-neumo{
     padding: 3rem;
     @media (max-width: 565px){
       padding: 2rem;
@@ -178,7 +178,26 @@ overflow-y: visible;
 
 
 .s-contact{
+  @media only screen and (max-width: 560px) {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
   .c-contact{
+    .form-control{
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 575px){
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    label{
+      font-size: 14px;
+      margin-top: .5rem;
+      font-family: "Yeseva One", cursive !important;
+    }
+
     .btn-contact{
       width: 100%;
     }
@@ -211,7 +230,7 @@ overflow-y: visible;
             height: 45px;
             width: 45px;
             border-radius: 50%;
-            background-color: $white-color;
+            background-color: #f2f2f2;
             
                   }
         }
@@ -262,3 +281,5 @@ overflow-y: visible;
     }
   }
 }
+
+

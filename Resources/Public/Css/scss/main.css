@@ -66,6 +66,16 @@ html {
   --bg-light: #fafbfe;
 }
 
+html ::-moz-selection {
+  background: #F4A24C;
+  color: #fff;
+}
+
+html ::selection {
+  background: #F4A24C;
+  color: #fff;
+}
+
 html[data-theme="dark"] {
   --bg: #161b22;
   --font: white;
@@ -498,6 +508,12 @@ body a {
   font-family: "Yeseva One", cursive !important;
 }
 
+html body .bg-neumo {
+  background: #ffffff;
+  -webkit-box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
+          box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
@@ -729,17 +745,17 @@ blockquote:before {
   color: #6FB3DE;
 }
 
-.s-artist .c-werte .bg-light {
+.s-artist .c-werte .bg-neumo {
   padding: 3rem;
 }
 
 @media (max-width: 565px) {
-  .s-artist .c-werte .bg-light {
+  .s-artist .c-werte .bg-neumo {
     padding: 2rem;
   }
 }
 
-.s-artist .c-werte .bg-light svg {
+.s-artist .c-werte .bg-neumo svg {
   margin-bottom: 1.5rem;
 }
 
@@ -787,6 +803,30 @@ blockquote:before {
   bottom: -135px;
 }
 
+@media only screen and (max-width: 560px) {
+  .s-contact {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+.s-contact .c-contact .form-control {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 575px) {
+  .s-contact .c-contact {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
+
+.s-contact .c-contact label {
+  font-size: 14px;
+  margin-top: .5rem;
+  font-family: "Yeseva One", cursive !important;
+}
+
 .s-contact .c-contact .btn-contact {
   width: 100%;
 }
@@ -819,7 +859,7 @@ blockquote:before {
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .s-contact .c-contact .contact-left ul {
@@ -866,7 +906,6 @@ ul .list-group-item {
 
 .footer {
   position: relative;
-  margin-top: 30px;
 }
 
 .footer a:hover {
@@ -1307,10 +1346,6 @@ html body .col-values h3 {
 .c-tools .s-tools .frame svg {
   max-width: 100%;
   height: auto;
-}
-
-.c-tools .s-tools .frame svg .bg-circle {
-  opacity: .3;
 }
 
 @media (max-width: 767px) {
