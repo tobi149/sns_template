@@ -13,6 +13,9 @@ html {
     --bg: white;
     --font: #262e3a;
     --bg-light: #fafbfe;
+
+    ::-moz-selection { background: #F4A24C; color: #fff; }
+	::selection { background: #F4A24C; color: #fff; }
 }
 
 html[data-theme="dark"] {
@@ -424,4 +427,10 @@ body .projektTitel h2, body .s-contact h2{
         text-decoration: none;
         font-family: "Yeseva One",cursive!important;
        
+    }
+
+
+    html body .bg-neumo{
+        background: #ffffff;
+        box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
     }

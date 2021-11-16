@@ -322,11 +322,11 @@ blockquote:before {
   color: #6FB3DE;
 }
 
-.s-artist .c-werte .bg-light {
+.s-artist .c-werte .bg-neumo {
   padding: 3rem;
 }
 
-.s-artist .c-werte .bg-light svg {
+.s-artist .c-werte .bg-neumo svg {
   margin-bottom: 1.5rem;
 }
 
