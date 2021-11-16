@@ -2,11 +2,10 @@
 
 <f:layout name="Default" />
 <f:section name="Main">
+
     <f:comment><!--<f:debug>{_all}</f:debug>--></f:comment>
 
-  
     <f:render partial="Navbar" arguments="{_all}"></f:render>
-
     <f:switch expression="{data.slug}">
         <f:case value="/datenschutz">
             <f:render partial="Datenschutz" arguments="{_all}"></f:render>
@@ -23,11 +22,9 @@
         <f:case value="/404">
             <div class="container">
                  <p><f:cObject typoscriptObjectPath="lib.error"/></p> 
-            </div>
-           
+            </div>   
         </f:case>
         <f:defaultCase>
-
             <f:render partial="Beginn" arguments="{_all}"></f:render>
             <f:render partial="Quote" arguments="{_all}"></f:render>
             <f:render partial="ArtistCards" arguments="{_all}"></f:render>
@@ -36,19 +33,11 @@
             <f:render partial="WebBanner" arguments="{_all}"></f:render>
             <f:render partial="WebSkills" arguments="{_all}"></f:render>
             <f:render partial="WebTools" arguments="{_all}"></f:render>
-            <f:render partial="Contact" arguments="{_all}"></f:render>
-                    
+            <f:render partial="Contact" arguments="{_all}"></f:render>     
         </f:defaultCase>
-
-       
-
      </f:switch>
-
-
-
      <f:render partial="Footer" arguments="{_all}"></f:render>
-
-
+     
 </f:section>
 
  

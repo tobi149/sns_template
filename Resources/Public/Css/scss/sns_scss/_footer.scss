@@ -102,12 +102,17 @@ a:hover{
 
             .col-badge{
                 display: flex;
+
+                @media (max-width: 1199px){
+                    justify-content: start!important;
+                }
               
                  @media (min-width: 768px){
                         justify-content: end;
                 }
                  @media (max-width: 767px){
-margin-top: 1.5rem;
+                        margin-top: 1.5rem;
+                        justify-content: start;
                  }
     img{
         mix-blend-mode: overlay;

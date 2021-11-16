@@ -183,6 +183,12 @@ overflow-y: visible;
     padding-bottom: 0;
 }
   .c-contact{
+
+    .clearfix p{
+      font-size: 20px;
+    color: #f4a24c !important;
+    }
+
     .form-control{
       background-color: #f2f2f2;
     }
@@ -201,6 +207,13 @@ overflow-y: visible;
     .btn-contact{
       width: 100%;
     }
+
+
+.contact-right{
+  h3{
+    display: none;
+  }
+}
 
     .contact-left{
       svg{
