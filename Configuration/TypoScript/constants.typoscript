@@ -49,7 +49,7 @@ page {
 config {
     no_cache = 0
     removeDefaultJS = 0
-    admPanel = 1
+    admPanel = 0
     prefixLocalAnchors = all
     headerComment = build by sitepackagebuilder.com
     sendCacheHeaders = 1
