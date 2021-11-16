@@ -514,6 +514,30 @@ html body .bg-neumo {
           box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
 }
 
+html {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(47, 72, 88, 0.4);
+  border-radius: 8px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #F4A24C;
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;

@@ -225,7 +225,27 @@ config {
     index_enable = 1
     index_externals = 1
     index_metatags = 1
-    headerComment = {$config.headerComment}
+    headerComment (
+//                                                                                                           
+                ......,   . .,,,..          ..,..  ..,,,,.     .,,,,..                       
+            .*%@%/    *'   ./&@@&(,         *,     (&@@#,     ,(@@&(.                       
+         .*%@@#*           .*&@@@#*       ,,.     (&@@#,     ,(@@&(.                       
+        .*&@@@/.             *%@@@#*     .*       (&@@#,     ,(@@&(.                       
+        ,(@@@&*.              *#@@@%*.  ,,        (&@@#,     ,(@@&(.                       
+        ,(@@@&*.               ,#&@@%/.,,.        (&@@#,     ,(@@&(.                       
+         *&@@@/.                .(&@@&#*.         (&@@#,     ,(@@&(.                       
+          ,#@@%*         ,,      .(&@&(.          (&@@#,     ,(@@&(.                       
+            ,(%%(,.....,*.        ./%(.          .(&@@#*     *#@@&#,      
+
+
+                                                                                            
+Silas Noah Stoehr - Artist and Developer
+-
+www.silasstoehr.com
+contact@silasstoehr.com       
+                                                                                     
+                                                                                                
+    )
 
     // Disable Image Upscaling
     noScaleUp = 1
