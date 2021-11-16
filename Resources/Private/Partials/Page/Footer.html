@@ -1,78 +1,66 @@
-    <footer class="footer bg-primary  align-items-end">
-  
+<footer class="footer bg-primary  align-items-end">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <a href="#1" class="d-block link-to-top">
 
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-          <a href="#1" class="d-block link-to-top">
-            
-    </a>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mx-0">
+      <a class="nav-link p-0" aria-current="page" href="{mainnavigation.0.link}">
+        <h2 class="text-dark logo ps-md-0 ps-2">
+          CVII
+        </h2>
+      </a>
+    </div>
+    <div class="row mx-0 py-4">
+      <div class="col-xl-3 col-md-6 col-12 ps-md-0 pb-4">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-primary ps-0 py-1">
+            <p class="m-0">Silas Noah Stoehr</p>
+          </li>
+          <li class="list-group-item bg-primary ps-0 py-1">
+            <a href='mailto:kontakt@silasstoehr.com'> kontakt(at)silasstoehr.com</a><br>
+          </li>
+          <li class="list-group-item bg-primary ps-0 py-1">
+            <a href="{mainnavigation.0.link}">www.silasstoehr.com{mainnavigation.0.link}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-primary p-0">
+            <a class="nav-link ps-0" aria-current="page" href="{mainnavigation.0.link}">Home</a>
+          </li>
+          <li class="list-group-item bg-primary p-0">
+            <a class="nav-link ps-0" href="#2">{mainnavigation.1.title}</a>
+          </li>
+          <li class="list-group-item bg-primary p-0">
+            <a class="nav-link ps-0" href="#3">{mainnavigation.2.title}</a>
+          </li>
+          <li class="list-group-item bg-primary p-0">
+            <a class="nav-link ps-0" href="#4">{mainnavigation.3.title}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-primary">
+            <a class="nav-link p-0" href="{footerMenu.1.link}">{footerMenu.1.title}</a>
+          </li>
+          <li class="list-group-item bg-primary">
+            <a class="nav-link p-0" href="{footerMenu.0.link}">{footerMenu.0.title}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-6 col-badge p-md-0">
+        <f:cObject typoscriptObjectPath="lib.footerBadge" />
       </div>
     </div>
-
-   <div class="container">
-          <div class="row mx-0">
-            <a class="nav-link p-0" aria-current="page" href="{mainnavigation.0.link}">
-              <h2 class="text-dark logo ps-md-0 ps-2">
-              CVII
-              </h2>
-            </a>
-          </div> 
-          <div class="row mx-0 py-4">
-                  <div class="col-xl-3 col-md-6 col-12 ps-md-0 pb-4">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item bg-primary ps-0 py-1">
-                      <p class="m-0">Silas Noah Stoehr</p>
-                      </li>
-                      <li class="list-group-item bg-primary ps-0 py-1">
-                      <a href='mailto:kontakt@silasstoehr.com'> kontakt(at)silasstoehr.com</a><br>
-                      </li>
-                      <li class="list-group-item bg-primary ps-0 py-1">
-                        <a href="{mainnavigation.0.link}">www.silasstoehr.com{mainnavigation.0.link}</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3 col-6">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-primary p-0">
-                      <a class="nav-link ps-0" aria-current="page" href="{mainnavigation.0.link}">Home</a>
-                    </li>
-                    <li class="list-group-item bg-primary p-0">
-                      <a class="nav-link ps-0" href="#2">{mainnavigation.1.title}</a>
-                    </li>
-                    <li class="list-group-item bg-primary p-0">
-                      <a class="nav-link ps-0" href="#3">{mainnavigation.2.title}</a>
-                    </li>
-                    <li class="list-group-item bg-primary p-0">
-                      <a class="nav-link ps-0" href="#4">{mainnavigation.3.title}</a>
-                    </li>
-                  </ul>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item bg-primary">
-                        <a class="nav-link p-0" href="{footerMenu.1.link}">{footerMenu.1.title}</a>
-                      </li>
-                      <li class="list-group-item bg-primary">
-                        <a class="nav-link p-0" href="{footerMenu.0.link}">{footerMenu.0.title}</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-3 col-6 col-badge p-md-0">
-                    <f:cObject typoscriptObjectPath="lib.footerBadge"/>
-                  </div>
-          </div>
-          <div class="row footer-end mx-0">
-          <f:cObject typoscriptObjectPath="lib.footerTex"/>
-        </div>
-      </div>
-
-
-     
-    </footer>
-
-<f:comment><!--
-     <div class="col-2 col-to-top">
-                      <a href="{mainnavigation.0.link}"><div class="sns-upm  me-3"></div>
-              <f:cObject typoscriptObjectPath="lib.totop"/></a>
-                  </div>
---></f:comment>
+    <div class="row footer-end mx-0">
+      <f:cObject typoscriptObjectPath="lib.footerTex" />
+    </div>
+  </div>
+</footer>
