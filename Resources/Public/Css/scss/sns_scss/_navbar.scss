@@ -161,6 +161,12 @@ a{
     flex-direction: column;
     justify-content: center;
 
+@media (max-width: 1284px){
+    display: none;
+    opacity: 0;
+    z-index: -999;
+    pointer-events: none;
+}
 
 
     .row-social{
