@@ -459,3 +459,36 @@ body .projektTitel h2, body .s-contact h2{
     background: $second-color;
   }
     }
+
+    html body{
+        .bmc-btn-container{
+            position: fixed;
+            bottom: 3rem;
+            right: 24px;
+            display: block;
+            z-index: 9999;
+         
+            .bmc-btn{
+                border-radius: 32px;
+                height: 50px;
+                &:hover span{
+                    color: $second-color;
+                }
+            }
+
+@media (max-width: 565px){
+    position: relative;
+    margin: 12px;
+    bottom: unset;
+    right: unset;
+
+}
+
+            span{
+   font-family: "Yeseva One", cursive !important;
+   color: #0c1b2e;
+   font-size: 16px;
+
+            }
+        }
+    }

@@ -538,6 +538,38 @@ html ::-webkit-scrollbar-thumb:hover {
   background: #F4A24C;
 }
 
+html body .bmc-btn-container {
+  position: fixed;
+  bottom: 3rem;
+  right: 24px;
+  display: block;
+  z-index: 9999;
+}
+
+html body .bmc-btn-container .bmc-btn {
+  border-radius: 32px;
+  height: 50px;
+}
+
+html body .bmc-btn-container .bmc-btn:hover span {
+  color: #F4A24C;
+}
+
+@media (max-width: 565px) {
+  html body .bmc-btn-container {
+    position: relative;
+    margin: 12px;
+    bottom: unset;
+    right: unset;
+  }
+}
+
+html body .bmc-btn-container span {
+  font-family: "Yeseva One", cursive !important;
+  color: #0c1b2e;
+  font-size: 16px;
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
