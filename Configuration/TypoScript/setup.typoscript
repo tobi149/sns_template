@@ -163,7 +163,7 @@ page {
     includeCSS {
       #  sns_template_layout = EXT:sns_template/Resources/Public/Css/layout.min.css
 	10 = EXT:sns_template/Resources/Public/Css/bootstrap.min.css
-	20 = EXT:sns_template/Resources/Public/Css/bootstrap.min.css.map
+	#20 = EXT:sns_template/Resources/Public/Css/bootstrap.min.css.map
 	30 = EXT:sns_template/Resources/Public/Css/aos.css
 
     90 = EXT:sns_template/Resources/Public/Css/scss/main.css
@@ -185,11 +185,12 @@ page {
     }
 
     includeJSFooter {
-	10 = EXT:sns_template/Resources/Public/JavaScript/Dist/script.min.js
-	20 = EXT:sns_template/Resources/Public/JavaScript/Src/aos.js
-	30 = EXT:sns_template/Resources/Public/JavaScript/Src/cookie.js
-	40 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js
-	50 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js.map
+	#10 = EXT:sns_template/Resources/Public/JavaScript/Dist/script.min.js
+    20 = EXT:sns_template/Resources/Public/JavaScript/Src/script.js
+	30 = EXT:sns_template/Resources/Public/JavaScript/Src/aos.js
+	#40 = EXT:sns_template/Resources/Public/JavaScript/Src/cookie.js
+	50 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js
+	#60 = EXT:sns_template/Resources/Public/JavaScript/Dist/bootstrap.bundle.min.js.map
 	
 	#smpt = https://www.smtpjs.com/v3/smtp.js
 	#smpt.external = 1
@@ -225,7 +226,27 @@ config {
     index_enable = 1
     index_externals = 1
     index_metatags = 1
-    headerComment = {$config.headerComment}
+    headerComment (
+//                                                                                                           
+                ......,   . .,,,..          ..,..  ..,,,,.     .,,,,..                       
+            .*%@%/    *'   ./&@@&(,         *,     (&@@#,     ,(@@&(.                       
+         .*%@@#*           .*&@@@#*       ,,.     (&@@#,     ,(@@&(.                       
+        .*&@@@/.             *%@@@#*     .*       (&@@#,     ,(@@&(.                       
+        ,(@@@&*.              *#@@@%*.  ,,        (&@@#,     ,(@@&(.                       
+        ,(@@@&*.               ,#&@@%/.,,.        (&@@#,     ,(@@&(.                       
+         *&@@@/.                .(&@@&#*.         (&@@#,     ,(@@&(.                       
+          ,#@@%*         ,,      .(&@&(.          (&@@#,     ,(@@&(.                       
+            ,(%%(,.....,*.        ./%(.          .(&@@#*     *#@@&#,      
+
+
+                                                                                            
+Silas Noah Stoehr - Artist and Developer
+-
+www.silasstoehr.com
+contact@silasstoehr.com       
+                                                                                     
+                                                                                                
+    )
 
     // Disable Image Upscaling
     noScaleUp = 1

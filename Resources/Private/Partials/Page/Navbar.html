@@ -1,98 +1,90 @@
-
+<div class="preload">
+    <h2 class="">CVII</h2>
+</div>
+<script>
+    const preload = document.querySelector(".preload");
+    setTimeout(() => { preload.classList.add("preload-finish"); }, 600);
+    window.addEventListener('load', () => {
+        preload.classList.add("preload-finish");
+    });
+</script>
 <f:comment>
-   <!-------------------------Preload------------------------------->
-</f:comment>
-       <div class="preload">
-        <h2 class="">CVII</h2>
-      </div>
-      <script>
-         const preload = document.querySelector(".preload");
-         setTimeout(() => {preload.classList.add("preload-finish");  }, 600);
-        window.addEventListener('load', () => {
-           preload.classList.add("preload-finish");
-      });
-
-
-      </script>
-<f:comment>
-   <!--  <a class="btn btn-outline-dark skip-to-content-link" href="#test-div">Zu den Hauptinhalten springen</a> -->
-     <!--
+    <!--  <a class="btn btn-outline-dark skip-to-content-link" href="#test-div">Zu den Hauptinhalten springen</a> -->
+    <!--
         <div class="form-check form-switch light-dark-btn">
           <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" name="theme">
           <label class="form-check-label" for="flexSwitchCheckChecked">Dark Mode</label>
         </div>
        -->
-         <!-------------------------Section Logo------------------------------->
 </f:comment>
 
-        <div class="container-fluid" id="1">
-        <div class="container section-logo pb-0 pt-sm-5 pt-4 mb-0">
+<div class="container-fluid" id="1">
+    <div class="container section-logo pb-0 pt-sm-5 pt-4 mb-0">
 
-    <div class="row">
-        <div class="col-6 p-sm-0">
-            <a href="{mainnavigation.0.link}" class="navbar-brand">
-                <!--
-                  <img src="/img/start/897295-84.png" class="d-block mx-auto mt-2 img-fluid" alt="cvii logo" width="50px" height="50px"> -->
-                  <h2 class="logo p-3 ps-0">CVII</h2>
+        <div class="row">
+            <div class="col-6 p-sm-0">
+                <a href="{mainnavigation.0.link}" class="navbar-brand">
+                    <h2 class="logo p-3 ps-0">CVII</h2>
                 </a>
-        </div>
-        <div class="col-6 d-flex justify-content-end">
-    <!--LangMenu-->
-    <f:for each="{langMenu}" as="lang" iteration="i">
-        <f:if condition="{lang.active}">
-            <f:then>
-                <!--dropdown-->
-                <p class="langmenu langmenu-{lang.locale} p-3 pe-0">{lang.title}</p>
-                <f:for each="{langMenu}" as="langUnder" iteration="i1">
-                    <f:if condition="{langUnder.active}">
-                        <f:else>
-                          <a href="{langUnder.link}" title="{langUnder.title}" class="p-3">  <p class="langmenu langmenu-{lang.locale}">{langUnder.title}</p></a>
-                        </f:else>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <!--LangMenu-->
+                <f:for each="{langMenu}" as="lang" iteration="i">
+                    <f:if condition="{lang.active}">
+                        <f:then>
+                            <!--dropdown-->
+                            <p class="langmenu langmenu-{lang.locale} p-3 pe-0">{lang.title}</p>
+                            <f:for each="{langMenu}" as="langUnder" iteration="i1">
+                                <f:if condition="{langUnder.active}">
+                                    <f:else>
+                                        <a href="{langUnder.link}" title="{langUnder.title}" class="p-3">
+                                            <p class="langmenu langmenu-{lang.locale}">{langUnder.title}</p>
+                                        </a>
+                                    </f:else>
+                                </f:if>
+                            </f:for>
+                        </f:then>
                     </f:if>
+
                 </f:for>
-            </f:then>
-        </f:if>
 
-    </f:for>
+            </div>
+        </div>
 
+    </div>
+</div>
+<f:comment>
+    <!-------------------------Section Navbar------------------------------->
+</f:comment>
+<div class="container m-0 p-0 c-nav d-xl-block d-none">
+    <div class="row row-nav">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light section-navbar">
+                <div class="collapse navbar-collapse m-3" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item" id="nav-{mainnavigation.0.data.uid}">
+                            <a class="nav-link sns-ul active" aria-current="page"
+                                href="#1"><span>{mainnavigation.0.title}</span></a>
+                        </li>
+                        <li class="nav-item" id="nav-{mainnavigation.1.data.uid}">
+                            <a class="nav-link sns-ul" href="#2"><span>{mainnavigation.1.title}</span></a>
+                        </li>
+                        <li class="nav-item" id="nav-{mainnavigation.2.data.uid}">
+                            <a class="nav-link sns-ul" href="#3"><span>{mainnavigation.2.title}</span></a>
+                        </li>
+                        <li class="nav-item" id="nav-{mainnavigation.3.data.uid}">
+                            <a class="nav-link sns-ul" href="#4"><span>{mainnavigation.3.title}</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
-
+    <div class="row row-social">
+        <div class="col">
+            <div class="nav-social-group">
+                <f:cObject typoscriptObjectPath="lib.navSocial" />
+            </div>
         </div>
-      </div>
-<f:comment>
-      <!-------------------------Section Navbar------------------------------->
-</f:comment>
-       <div class="container m-0 p-0 c-nav">
-           <div class="row row-nav">
-               <div class="col">
-                   <nav class="navbar navbar-expand-lg navbar-light section-navbar d-xl-block d-none">
-                       <div class="collapse navbar-collapse m-3" id="navbarNav">
-                           <ul class="navbar-nav d-flex flex-column">
-                               <li class="nav-item" id="nav-{mainnavigation.0.data.uid}">
-                                   <a class="nav-link sns-ul active" aria-current="page" href="#1"><span>{mainnavigation.0.title}</span></a>
-                               </li>
-                               <li class="nav-item" id="nav-{mainnavigation.1.data.uid}">
-                                   <a class="nav-link sns-ul" href="#2"><span>{mainnavigation.1.title}</span></a>
-                               </li>
-                               <li class="nav-item" id="nav-{mainnavigation.2.data.uid}">
-                                   <a class="nav-link sns-ul" href="#3"><span>{mainnavigation.2.title}</span></a>
-                               </li>
-                               <li class="nav-item" id="nav-{mainnavigation.3.data.uid}">
-                                   <a class="nav-link sns-ul" href="#4"><span>{mainnavigation.3.title}</span></a>
-                               </li>
-                           </ul>
-                       </div>
-
-
-                   </nav>
-           </div>
-           </div>
-           <div class="row row-social">
-               <div class="col">
-                   <div class="nav-social-group">
-                       <f:cObject typoscriptObjectPath="lib.navSocial"/>
-                   </div>
-               </div>
-           </div>
-       </div>
+    </div>
+</div>

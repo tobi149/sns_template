@@ -514,6 +514,30 @@ html body .bg-neumo {
           box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
 }
 
+html {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(47, 72, 88, 0.4);
+  border-radius: 8px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: #F4A24C;
+}
+
 .brand-logo {
   margin-top: 14px;
   text-decoration: unset;
@@ -810,6 +834,11 @@ blockquote:before {
   }
 }
 
+.s-contact .c-contact .clearfix p {
+  font-size: 20px;
+  color: #f4a24c !important;
+}
+
 .s-contact .c-contact .form-control {
   background-color: #f2f2f2;
 }
@@ -829,6 +858,10 @@ blockquote:before {
 
 .s-contact .c-contact .btn-contact {
   width: 100%;
+}
+
+.s-contact .c-contact .contact-right h3 {
+  display: none;
 }
 
 .s-contact .c-contact .contact-left svg {
@@ -979,6 +1012,14 @@ ul .list-group-item {
   display: flex;
 }
 
+@media (max-width: 1199px) {
+  .footer .col-badge {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+}
+
 @media (min-width: 768px) {
   .footer .col-badge {
     -webkit-box-pack: end;
@@ -990,6 +1031,9 @@ ul .list-group-item {
 @media (max-width: 767px) {
   .footer .col-badge {
     margin-top: 1.5rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -1341,6 +1385,7 @@ html body .col-values h3 {
 .c-tools .frame svg {
   display: block;
   margin: 0 auto;
+  padding: 4px;
 }
 
 .c-tools .s-tools .frame svg {

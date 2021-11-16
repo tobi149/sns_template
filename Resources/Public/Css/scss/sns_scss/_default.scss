@@ -434,3 +434,28 @@ body .projektTitel h2, body .s-contact h2{
         background: #ffffff;
         box-shadow: 8px 8px 30px #e7e7e7, -8px -8px 30px #ffffff;
     }
+
+    html{
+        /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+   
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(47, 72, 88, .4); 
+    border-radius: 8px;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $second-color;
+  }
+    }
